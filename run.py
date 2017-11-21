@@ -21,7 +21,7 @@ log_path = './log/'+time.strftime('%Y-%m-%d',time.localtime(time.time()))+'.log'
 logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s',
                     datefmt='%a, %d %b %Y %H:%M:%S',
-                    #filename=log_path,
+                    filename=log_path,
                     filemode='w'
                     )
 if __name__ == '__main__':
