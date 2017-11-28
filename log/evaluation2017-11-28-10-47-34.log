@@ -1,0 +1,115 @@
+Tue, 28 Nov 2017 10:47:34 utils.py[line:276] INFO loading Word2Vec object from ../res/kd_tree1
+Tue, 28 Nov 2017 10:47:45 utils.py[line:298] INFO loading wv recursively from ../res/kd_tree1.wv.* with mmap=None
+Tue, 28 Nov 2017 10:47:45 utils.py[line:302] INFO loading syn0 from ../res/kd_tree1.wv.syn0.npy with mmap=None
+Tue, 28 Nov 2017 10:47:46 utils.py[line:333] INFO setting ignored attribute syn0norm to None
+Tue, 28 Nov 2017 10:47:46 utils.py[line:302] INFO loading syn1 from ../res/kd_tree1.syn1.npy with mmap=None
+Tue, 28 Nov 2017 10:47:47 utils.py[line:302] INFO loading syn1neg from ../res/kd_tree1.syn1neg.npy with mmap=None
+Tue, 28 Nov 2017 10:47:47 utils.py[line:333] INFO setting ignored attribute cum_table to None
+Tue, 28 Nov 2017 10:47:47 utils.py[line:282] INFO loaded ../res/kd_tree1
+Tue, 28 Nov 2017 10:47:49 evaluation.py[line:68] INFO Group Name:	capital-common-countries
+Tue, 28 Nov 2017 10:47:49 keyedvectors.py[line:851] INFO precomputing L2-norms of word weight vectors
+Tue, 28 Nov 2017 10:48:03 evaluation.py[line:67] INFO In this group.Sum	506 Right	343 Accuracy	0.677866
+Tue, 28 Nov 2017 10:48:03 evaluation.py[line:68] INFO Group Name:	capital-world
+Tue, 28 Nov 2017 10:49:52 evaluation.py[line:67] INFO In this group.Sum	4524 Right	2393 Accuracy	0.528957
+Tue, 28 Nov 2017 10:49:52 evaluation.py[line:68] INFO Group Name:	currency
+Tue, 28 Nov 2017 10:50:13 evaluation.py[line:67] INFO In this group.Sum	866 Right	90 Accuracy	0.103926
+Tue, 28 Nov 2017 10:50:13 evaluation.py[line:68] INFO Group Name:	city-in-state
+Tue, 28 Nov 2017 10:51:13 evaluation.py[line:67] INFO In this group.Sum	2467 Right	640 Accuracy	0.259424
+Tue, 28 Nov 2017 10:51:13 evaluation.py[line:68] INFO Group Name:	family
+Tue, 28 Nov 2017 10:51:27 evaluation.py[line:67] INFO In this group.Sum	506 Right	373 Accuracy	0.737154
+Tue, 28 Nov 2017 10:51:27 evaluation.py[line:68] INFO Group Name:	gram1-adjective-to-adverb
+Tue, 28 Nov 2017 10:51:54 evaluation.py[line:67] INFO In this group.Sum	992 Right	188 Accuracy	0.189516
+Tue, 28 Nov 2017 10:51:54 evaluation.py[line:68] INFO Group Name:	gram2-opposite
+Tue, 28 Nov 2017 10:52:14 evaluation.py[line:67] INFO In this group.Sum	812 Right	168 Accuracy	0.206897
+Tue, 28 Nov 2017 10:52:14 evaluation.py[line:68] INFO Group Name:	gram3-comparative
+Tue, 28 Nov 2017 10:52:47 evaluation.py[line:67] INFO In this group.Sum	1332 Right	1006 Accuracy	0.755255
+Tue, 28 Nov 2017 10:52:47 evaluation.py[line:68] INFO Group Name:	gram4-superlative
+Tue, 28 Nov 2017 10:53:14 evaluation.py[line:67] INFO In this group.Sum	1122 Right	522 Accuracy	0.465241
+Tue, 28 Nov 2017 10:53:14 evaluation.py[line:68] INFO Group Name:	gram5-present-participle
+Tue, 28 Nov 2017 10:53:39 evaluation.py[line:67] INFO In this group.Sum	1056 Right	519 Accuracy	0.491477
+Tue, 28 Nov 2017 10:53:39 evaluation.py[line:68] INFO Group Name:	gram6-nationality-adjective
+Tue, 28 Nov 2017 10:54:15 evaluation.py[line:67] INFO In this group.Sum	1599 Right	1138 Accuracy	0.711695
+Tue, 28 Nov 2017 10:54:15 evaluation.py[line:68] INFO Group Name:	gram7-past-tense
+Tue, 28 Nov 2017 10:54:52 evaluation.py[line:67] INFO In this group.Sum	1560 Right	818 Accuracy	0.524359
+Tue, 28 Nov 2017 10:54:52 evaluation.py[line:68] INFO Group Name:	gram8-plural
+Tue, 28 Nov 2017 10:55:26 evaluation.py[line:67] INFO In this group.Sum	1332 Right	801 Accuracy	0.601351
+Tue, 28 Nov 2017 10:55:26 evaluation.py[line:68] INFO Group Name:	gram9-plural-verbs
+Tue, 28 Nov 2017 10:55:48 evaluation.py[line:78] INFO In this group.Sum	870 Right	509 Accuracy	0.585057
+Tue, 28 Nov 2017 10:55:48 evaluation.py[line:79] INFO Number is 19544 cnt. The right count is 9508.The whole accuracy is 0.486492.
+Tue, 28 Nov 2017 10:55:48 utils.py[line:276] INFO loading Word2Vec object from ../res/kd_tree2
+Tue, 28 Nov 2017 10:55:59 utils.py[line:298] INFO loading wv recursively from ../res/kd_tree2.wv.* with mmap=None
+Tue, 28 Nov 2017 10:55:59 utils.py[line:302] INFO loading syn0 from ../res/kd_tree2.wv.syn0.npy with mmap=None
+Tue, 28 Nov 2017 10:56:00 utils.py[line:333] INFO setting ignored attribute syn0norm to None
+Tue, 28 Nov 2017 10:56:00 utils.py[line:302] INFO loading syn1 from ../res/kd_tree2.syn1.npy with mmap=None
+Tue, 28 Nov 2017 10:56:01 utils.py[line:302] INFO loading syn1neg from ../res/kd_tree2.syn1neg.npy with mmap=None
+Tue, 28 Nov 2017 10:56:01 utils.py[line:333] INFO setting ignored attribute cum_table to None
+Tue, 28 Nov 2017 10:56:01 utils.py[line:282] INFO loaded ../res/kd_tree2
+Tue, 28 Nov 2017 10:56:06 evaluation.py[line:68] INFO Group Name:	capital-common-countries
+Tue, 28 Nov 2017 10:56:06 keyedvectors.py[line:851] INFO precomputing L2-norms of word weight vectors
+Tue, 28 Nov 2017 10:56:21 evaluation.py[line:67] INFO In this group.Sum	506 Right	360 Accuracy	0.711462
+Tue, 28 Nov 2017 10:56:21 evaluation.py[line:68] INFO Group Name:	capital-world
+Tue, 28 Nov 2017 10:58:26 evaluation.py[line:67] INFO In this group.Sum	4524 Right	2417 Accuracy	0.534262
+Tue, 28 Nov 2017 10:58:26 evaluation.py[line:68] INFO Group Name:	currency
+Tue, 28 Nov 2017 10:58:51 evaluation.py[line:67] INFO In this group.Sum	866 Right	87 Accuracy	0.100462
+Tue, 28 Nov 2017 10:58:51 evaluation.py[line:68] INFO Group Name:	city-in-state
+Tue, 28 Nov 2017 10:59:59 evaluation.py[line:67] INFO In this group.Sum	2467 Right	643 Accuracy	0.260640
+Tue, 28 Nov 2017 10:59:59 evaluation.py[line:68] INFO Group Name:	family
+Tue, 28 Nov 2017 11:00:13 evaluation.py[line:67] INFO In this group.Sum	506 Right	368 Accuracy	0.727273
+Tue, 28 Nov 2017 11:00:13 evaluation.py[line:68] INFO Group Name:	gram1-adjective-to-adverb
+Tue, 28 Nov 2017 11:00:42 evaluation.py[line:67] INFO In this group.Sum	992 Right	216 Accuracy	0.217742
+Tue, 28 Nov 2017 11:00:42 evaluation.py[line:68] INFO Group Name:	gram2-opposite
+Tue, 28 Nov 2017 11:01:08 evaluation.py[line:67] INFO In this group.Sum	812 Right	164 Accuracy	0.201970
+Tue, 28 Nov 2017 11:01:08 evaluation.py[line:68] INFO Group Name:	gram3-comparative
+Tue, 28 Nov 2017 11:01:48 evaluation.py[line:67] INFO In this group.Sum	1332 Right	1023 Accuracy	0.768018
+Tue, 28 Nov 2017 11:01:48 evaluation.py[line:68] INFO Group Name:	gram4-superlative
+Tue, 28 Nov 2017 11:02:24 evaluation.py[line:67] INFO In this group.Sum	1122 Right	514 Accuracy	0.458111
+Tue, 28 Nov 2017 11:02:24 evaluation.py[line:68] INFO Group Name:	gram5-present-participle
+Tue, 28 Nov 2017 11:02:55 evaluation.py[line:67] INFO In this group.Sum	1056 Right	546 Accuracy	0.517045
+Tue, 28 Nov 2017 11:02:55 evaluation.py[line:68] INFO Group Name:	gram6-nationality-adjective
+Tue, 28 Nov 2017 11:03:38 evaluation.py[line:67] INFO In this group.Sum	1599 Right	1110 Accuracy	0.694184
+Tue, 28 Nov 2017 11:03:38 evaluation.py[line:68] INFO Group Name:	gram7-past-tense
+Tue, 28 Nov 2017 11:04:25 evaluation.py[line:67] INFO In this group.Sum	1560 Right	800 Accuracy	0.512821
+Tue, 28 Nov 2017 11:04:25 evaluation.py[line:68] INFO Group Name:	gram8-plural
+Tue, 28 Nov 2017 11:05:08 evaluation.py[line:67] INFO In this group.Sum	1332 Right	780 Accuracy	0.585586
+Tue, 28 Nov 2017 11:05:08 evaluation.py[line:68] INFO Group Name:	gram9-plural-verbs
+Tue, 28 Nov 2017 11:05:35 evaluation.py[line:78] INFO In this group.Sum	870 Right	451 Accuracy	0.518391
+Tue, 28 Nov 2017 11:05:35 evaluation.py[line:79] INFO Number is 19544 cnt. The right count is 9479.The whole accuracy is 0.485008.
+Tue, 28 Nov 2017 11:05:35 utils.py[line:276] INFO loading Word2Vec object from ../res/kd_tree3
+Tue, 28 Nov 2017 11:05:48 utils.py[line:298] INFO loading wv recursively from ../res/kd_tree3.wv.* with mmap=None
+Tue, 28 Nov 2017 11:05:48 utils.py[line:302] INFO loading syn0 from ../res/kd_tree3.wv.syn0.npy with mmap=None
+Tue, 28 Nov 2017 11:05:48 utils.py[line:333] INFO setting ignored attribute syn0norm to None
+Tue, 28 Nov 2017 11:05:49 utils.py[line:302] INFO loading syn1 from ../res/kd_tree3.syn1.npy with mmap=None
+Tue, 28 Nov 2017 11:05:49 utils.py[line:302] INFO loading syn1neg from ../res/kd_tree3.syn1neg.npy with mmap=None
+Tue, 28 Nov 2017 11:05:50 utils.py[line:333] INFO setting ignored attribute cum_table to None
+Tue, 28 Nov 2017 11:05:50 utils.py[line:282] INFO loaded ../res/kd_tree3
+Tue, 28 Nov 2017 11:05:55 evaluation.py[line:68] INFO Group Name:	capital-common-countries
+Tue, 28 Nov 2017 11:05:55 keyedvectors.py[line:851] INFO precomputing L2-norms of word weight vectors
+Tue, 28 Nov 2017 11:06:14 evaluation.py[line:67] INFO In this group.Sum	506 Right	354 Accuracy	0.699605
+Tue, 28 Nov 2017 11:06:14 evaluation.py[line:68] INFO Group Name:	capital-world
+Tue, 28 Nov 2017 11:08:49 evaluation.py[line:67] INFO In this group.Sum	4524 Right	2598 Accuracy	0.574271
+Tue, 28 Nov 2017 11:08:49 evaluation.py[line:68] INFO Group Name:	currency
+Tue, 28 Nov 2017 11:09:18 evaluation.py[line:67] INFO In this group.Sum	866 Right	93 Accuracy	0.107390
+Tue, 28 Nov 2017 11:09:18 evaluation.py[line:68] INFO Group Name:	city-in-state
+Tue, 28 Nov 2017 11:10:35 evaluation.py[line:67] INFO In this group.Sum	2467 Right	654 Accuracy	0.265099
+Tue, 28 Nov 2017 11:10:35 evaluation.py[line:68] INFO Group Name:	family
+Tue, 28 Nov 2017 11:10:51 evaluation.py[line:67] INFO In this group.Sum	506 Right	377 Accuracy	0.745059
+Tue, 28 Nov 2017 11:10:51 evaluation.py[line:68] INFO Group Name:	gram1-adjective-to-adverb
+Tue, 28 Nov 2017 11:11:24 evaluation.py[line:67] INFO In this group.Sum	992 Right	228 Accuracy	0.229839
+Tue, 28 Nov 2017 11:11:24 evaluation.py[line:68] INFO Group Name:	gram2-opposite
+Tue, 28 Nov 2017 11:11:52 evaluation.py[line:67] INFO In this group.Sum	812 Right	173 Accuracy	0.213054
+Tue, 28 Nov 2017 11:11:52 evaluation.py[line:68] INFO Group Name:	gram3-comparative
+Tue, 28 Nov 2017 11:12:45 evaluation.py[line:67] INFO In this group.Sum	1332 Right	1040 Accuracy	0.780781
+Tue, 28 Nov 2017 11:12:45 evaluation.py[line:68] INFO Group Name:	gram4-superlative
+Tue, 28 Nov 2017 11:13:22 evaluation.py[line:67] INFO In this group.Sum	1122 Right	517 Accuracy	0.460784
+Tue, 28 Nov 2017 11:13:22 evaluation.py[line:68] INFO Group Name:	gram5-present-participle
+Tue, 28 Nov 2017 11:13:56 evaluation.py[line:67] INFO In this group.Sum	1056 Right	500 Accuracy	0.473485
+Tue, 28 Nov 2017 11:13:56 evaluation.py[line:68] INFO Group Name:	gram6-nationality-adjective
+Tue, 28 Nov 2017 11:14:47 evaluation.py[line:67] INFO In this group.Sum	1599 Right	1100 Accuracy	0.687930
+Tue, 28 Nov 2017 11:14:47 evaluation.py[line:68] INFO Group Name:	gram7-past-tense
+Tue, 28 Nov 2017 11:15:43 evaluation.py[line:67] INFO In this group.Sum	1560 Right	834 Accuracy	0.534615
+Tue, 28 Nov 2017 11:15:43 evaluation.py[line:68] INFO Group Name:	gram8-plural
+Tue, 28 Nov 2017 11:16:30 evaluation.py[line:67] INFO In this group.Sum	1332 Right	754 Accuracy	0.566066
+Tue, 28 Nov 2017 11:16:30 evaluation.py[line:68] INFO Group Name:	gram9-plural-verbs
+Tue, 28 Nov 2017 11:17:00 evaluation.py[line:78] INFO In this group.Sum	870 Right	471 Accuracy	0.541379
+Tue, 28 Nov 2017 11:17:00 evaluation.py[line:79] INFO Number is 19544 cnt. The right count is 9693.The whole accuracy is 0.495958.
+Tue, 28 Nov 2017 11:17:00 utils.py[line:276] INFO loading Word2Vec object from ../res/huff_beg

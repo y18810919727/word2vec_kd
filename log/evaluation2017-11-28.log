@@ -1,0 +1,40 @@
+Tue, 28 Nov 2017 10:11:05 utils.py[line:276] INFO loading Word2Vec object from /media/yzl/1488-8A10/kd_training/res/huff_res/huff_tree1
+Tue, 28 Nov 2017 10:11:13 utils.py[line:298] INFO loading wv recursively from /media/yzl/1488-8A10/kd_training/res/huff_res/huff_tree1.wv.* with mmap=None
+Tue, 28 Nov 2017 10:11:13 utils.py[line:302] INFO loading syn0 from /media/yzl/1488-8A10/kd_training/res/huff_res/huff_tree1.wv.syn0.npy with mmap=None
+Tue, 28 Nov 2017 10:11:21 utils.py[line:333] INFO setting ignored attribute syn0norm to None
+Tue, 28 Nov 2017 10:11:21 utils.py[line:302] INFO loading syn1 from /media/yzl/1488-8A10/kd_training/res/huff_res/huff_tree1.syn1.npy with mmap=None
+Tue, 28 Nov 2017 10:11:29 utils.py[line:302] INFO loading syn1neg from /media/yzl/1488-8A10/kd_training/res/huff_res/huff_tree1.syn1neg.npy with mmap=None
+Tue, 28 Nov 2017 10:11:37 utils.py[line:333] INFO setting ignored attribute cum_table to None
+Tue, 28 Nov 2017 10:11:37 utils.py[line:282] INFO loaded /media/yzl/1488-8A10/kd_training/res/huff_res/huff_tree1
+Tue, 28 Nov 2017 10:11:39 keyedvectors.py[line:851] INFO precomputing L2-norms of word weight vectors
+Tue, 28 Nov 2017 10:11:39 evaluation.py[line:66] INFO the id is 1 . The right count is 1 .Accuracy 1.000000
+Tue, 28 Nov 2017 10:12:06 evaluation.py[line:66] INFO the id is 1001 . The right count is 585 .Accuracy 0.584416
+Tue, 28 Nov 2017 10:12:30 evaluation.py[line:66] INFO the id is 2001 . The right count is 1092 .Accuracy 0.545727
+Tue, 28 Nov 2017 10:12:52 evaluation.py[line:66] INFO the id is 3001 . The right count is 1637 .Accuracy 0.545485
+Tue, 28 Nov 2017 10:13:16 evaluation.py[line:66] INFO the id is 4001 . The right count is 2111 .Accuracy 0.527618
+Tue, 28 Nov 2017 10:13:43 evaluation.py[line:66] INFO the id is 5001 . The right count is 2623 .Accuracy 0.524495
+Tue, 28 Nov 2017 10:14:07 evaluation.py[line:66] INFO the id is 6001 . The right count is 2763 .Accuracy 0.460423
+Tue, 28 Nov 2017 10:14:28 evaluation.py[line:66] INFO the id is 7001 . The right count is 2972 .Accuracy 0.424511
+Tue, 28 Nov 2017 10:14:49 evaluation.py[line:66] INFO the id is 8001 . The right count is 3148 .Accuracy 0.393451
+Tue, 28 Nov 2017 10:15:11 evaluation.py[line:66] INFO the id is 9001 . The right count is 3597 .Accuracy 0.399622
+Tue, 28 Nov 2017 10:15:34 evaluation.py[line:66] INFO the id is 10001 . The right count is 3871 .Accuracy 0.387061
+Tue, 28 Nov 2017 10:15:58 evaluation.py[line:66] INFO the id is 11001 . The right count is 4246 .Accuracy 0.385965
+Tue, 28 Nov 2017 10:16:23 evaluation.py[line:66] INFO the id is 12001 . The right count is 4997 .Accuracy 0.416382
+Tue, 28 Nov 2017 10:16:49 evaluation.py[line:66] INFO the id is 13001 . The right count is 5459 .Accuracy 0.419891
+Tue, 28 Nov 2017 10:17:16 evaluation.py[line:66] INFO the id is 14001 . The right count is 5913 .Accuracy 0.422327
+Tue, 28 Nov 2017 10:17:37 evaluation.py[line:66] INFO the id is 15001 . The right count is 6505 .Accuracy 0.433638
+Tue, 28 Nov 2017 10:18:00 evaluation.py[line:66] INFO the id is 16001 . The right count is 7167 .Accuracy 0.447910
+Tue, 28 Nov 2017 10:18:25 evaluation.py[line:66] INFO the id is 17001 . The right count is 7742 .Accuracy 0.455385
+Tue, 28 Nov 2017 10:18:49 evaluation.py[line:66] INFO the id is 18001 . The right count is 8317 .Accuracy 0.462030
+Tue, 28 Nov 2017 10:19:13 evaluation.py[line:66] INFO the id is 19001 . The right count is 8803 .Accuracy 0.463291
+Tue, 28 Nov 2017 10:19:26 evaluation.py[line:70] INFO The right count is 9087.The accuracy is 0.464951
+Tue, 28 Nov 2017 10:19:26 utils.py[line:276] INFO loading Word2Vec object from /media/yzl/1488-8A10/kd_training/res/huff_res/huff_tree2
+Tue, 28 Nov 2017 10:19:34 utils.py[line:298] INFO loading wv recursively from /media/yzl/1488-8A10/kd_training/res/huff_res/huff_tree2.wv.* with mmap=None
+Tue, 28 Nov 2017 10:19:34 utils.py[line:302] INFO loading syn0 from /media/yzl/1488-8A10/kd_training/res/huff_res/huff_tree2.wv.syn0.npy with mmap=None
+Tue, 28 Nov 2017 10:19:42 utils.py[line:333] INFO setting ignored attribute syn0norm to None
+Tue, 28 Nov 2017 10:19:42 utils.py[line:302] INFO loading syn1 from /media/yzl/1488-8A10/kd_training/res/huff_res/huff_tree2.syn1.npy with mmap=None
+Tue, 28 Nov 2017 10:19:50 utils.py[line:302] INFO loading syn1neg from /media/yzl/1488-8A10/kd_training/res/huff_res/huff_tree2.syn1neg.npy with mmap=None
+Tue, 28 Nov 2017 10:19:58 utils.py[line:333] INFO setting ignored attribute cum_table to None
+Tue, 28 Nov 2017 10:19:58 utils.py[line:282] INFO loaded /media/yzl/1488-8A10/kd_training/res/huff_res/huff_tree2
+Tue, 28 Nov 2017 10:20:01 keyedvectors.py[line:851] INFO precomputing L2-norms of word weight vectors
+Tue, 28 Nov 2017 10:20:01 evaluation.py[line:66] INFO the id is 1 . The right count is 1 .Accuracy 1.000000

@@ -1,0 +1,120 @@
+Sun, 26 Nov 2017 11:15:22 utils.py[line:276] INFO loading Word2Vec object from ../res/kd_tree1
+Sun, 26 Nov 2017 11:15:33 utils.py[line:298] INFO loading wv recursively from ../res/kd_tree1.wv.* with mmap=None
+Sun, 26 Nov 2017 11:15:33 utils.py[line:302] INFO loading syn0 from ../res/kd_tree1.wv.syn0.npy with mmap=None
+Sun, 26 Nov 2017 11:15:34 utils.py[line:333] INFO setting ignored attribute syn0norm to None
+Sun, 26 Nov 2017 11:15:34 utils.py[line:302] INFO loading syn1 from ../res/kd_tree1.syn1.npy with mmap=None
+Sun, 26 Nov 2017 11:15:34 utils.py[line:302] INFO loading syn1neg from ../res/kd_tree1.syn1neg.npy with mmap=None
+Sun, 26 Nov 2017 11:15:35 utils.py[line:333] INFO setting ignored attribute cum_table to None
+Sun, 26 Nov 2017 11:15:35 utils.py[line:282] INFO loaded ../res/kd_tree1
+Sun, 26 Nov 2017 11:15:37 keyedvectors.py[line:851] INFO precomputing L2-norms of word weight vectors
+Sun, 26 Nov 2017 11:15:38 evaluation.py[line:63] INFO the id is 1 . The right count is 1 .Accuracy 1.000000
+Sun, 26 Nov 2017 11:16:09 evaluation.py[line:63] INFO the id is 1001 . The right count is 651 .Accuracy 0.650350
+Sun, 26 Nov 2017 11:16:40 evaluation.py[line:63] INFO the id is 2001 . The right count is 1195 .Accuracy 0.597201
+Sun, 26 Nov 2017 11:17:10 evaluation.py[line:63] INFO the id is 3001 . The right count is 1738 .Accuracy 0.579140
+Sun, 26 Nov 2017 11:17:40 evaluation.py[line:63] INFO the id is 4001 . The right count is 2224 .Accuracy 0.555861
+Sun, 26 Nov 2017 11:18:10 evaluation.py[line:63] INFO the id is 5001 . The right count is 2799 .Accuracy 0.559688
+Sun, 26 Nov 2017 11:18:40 evaluation.py[line:63] INFO the id is 6001 . The right count is 2936 .Accuracy 0.489252
+Sun, 26 Nov 2017 11:19:09 evaluation.py[line:63] INFO the id is 7001 . The right count is 3234 .Accuracy 0.461934
+Sun, 26 Nov 2017 11:19:38 evaluation.py[line:63] INFO the id is 8001 . The right count is 3437 .Accuracy 0.429571
+Sun, 26 Nov 2017 11:20:08 evaluation.py[line:63] INFO the id is 9001 . The right count is 3928 .Accuracy 0.436396
+Sun, 26 Nov 2017 11:20:39 evaluation.py[line:63] INFO the id is 10001 . The right count is 4155 .Accuracy 0.415458
+Sun, 26 Nov 2017 11:21:10 evaluation.py[line:63] INFO the id is 11001 . The right count is 4527 .Accuracy 0.411508
+Sun, 26 Nov 2017 11:21:42 evaluation.py[line:63] INFO the id is 12001 . The right count is 5281 .Accuracy 0.440047
+Sun, 26 Nov 2017 11:22:15 evaluation.py[line:63] INFO the id is 13001 . The right count is 5767 .Accuracy 0.443581
+Sun, 26 Nov 2017 11:22:45 evaluation.py[line:63] INFO the id is 14001 . The right count is 6254 .Accuracy 0.446682
+Sun, 26 Nov 2017 11:23:14 evaluation.py[line:63] INFO the id is 15001 . The right count is 6850 .Accuracy 0.456636
+Sun, 26 Nov 2017 11:23:44 evaluation.py[line:63] INFO the id is 16001 . The right count is 7547 .Accuracy 0.471658
+Sun, 26 Nov 2017 11:24:14 evaluation.py[line:63] INFO the id is 17001 . The right count is 8131 .Accuracy 0.478266
+Sun, 26 Nov 2017 11:24:45 evaluation.py[line:63] INFO the id is 18001 . The right count is 8750 .Accuracy 0.486084
+Sun, 26 Nov 2017 11:25:16 evaluation.py[line:63] INFO the id is 19001 . The right count is 9267 .Accuracy 0.487711
+Sun, 26 Nov 2017 11:25:33 evaluation.py[line:67] INFO The right count is 9587.The accuracy is 0.490534
+Sun, 26 Nov 2017 11:25:33 utils.py[line:276] INFO loading Word2Vec object from ../res/kd_tree2
+Sun, 26 Nov 2017 11:25:45 utils.py[line:298] INFO loading wv recursively from ../res/kd_tree2.wv.* with mmap=None
+Sun, 26 Nov 2017 11:25:45 utils.py[line:302] INFO loading syn0 from ../res/kd_tree2.wv.syn0.npy with mmap=None
+Sun, 26 Nov 2017 11:25:45 utils.py[line:333] INFO setting ignored attribute syn0norm to None
+Sun, 26 Nov 2017 11:25:45 utils.py[line:302] INFO loading syn1 from ../res/kd_tree2.syn1.npy with mmap=None
+Sun, 26 Nov 2017 11:25:46 utils.py[line:302] INFO loading syn1neg from ../res/kd_tree2.syn1neg.npy with mmap=None
+Sun, 26 Nov 2017 11:25:47 utils.py[line:333] INFO setting ignored attribute cum_table to None
+Sun, 26 Nov 2017 11:25:47 utils.py[line:282] INFO loaded ../res/kd_tree2
+Sun, 26 Nov 2017 11:25:51 keyedvectors.py[line:851] INFO precomputing L2-norms of word weight vectors
+Sun, 26 Nov 2017 11:25:51 evaluation.py[line:63] INFO the id is 1 . The right count is 1 .Accuracy 1.000000
+Sun, 26 Nov 2017 11:26:15 evaluation.py[line:63] INFO the id is 1001 . The right count is 614 .Accuracy 0.613387
+Sun, 26 Nov 2017 11:26:38 evaluation.py[line:63] INFO the id is 2001 . The right count is 1183 .Accuracy 0.591204
+Sun, 26 Nov 2017 11:27:01 evaluation.py[line:63] INFO the id is 3001 . The right count is 1821 .Accuracy 0.606798
+Sun, 26 Nov 2017 11:27:24 evaluation.py[line:63] INFO the id is 4001 . The right count is 2296 .Accuracy 0.573857
+Sun, 26 Nov 2017 11:27:48 evaluation.py[line:63] INFO the id is 5001 . The right count is 2790 .Accuracy 0.557888
+Sun, 26 Nov 2017 11:28:11 evaluation.py[line:63] INFO the id is 6001 . The right count is 2925 .Accuracy 0.487419
+Sun, 26 Nov 2017 11:28:34 evaluation.py[line:63] INFO the id is 7001 . The right count is 3205 .Accuracy 0.457792
+Sun, 26 Nov 2017 11:28:58 evaluation.py[line:63] INFO the id is 8001 . The right count is 3393 .Accuracy 0.424072
+Sun, 26 Nov 2017 11:29:21 evaluation.py[line:63] INFO the id is 9001 . The right count is 3878 .Accuracy 0.430841
+Sun, 26 Nov 2017 11:29:45 evaluation.py[line:63] INFO the id is 10001 . The right count is 4130 .Accuracy 0.412959
+Sun, 26 Nov 2017 11:30:09 evaluation.py[line:63] INFO the id is 11001 . The right count is 4505 .Accuracy 0.409508
+Sun, 26 Nov 2017 11:30:34 evaluation.py[line:63] INFO the id is 12001 . The right count is 5268 .Accuracy 0.438963
+Sun, 26 Nov 2017 11:30:57 evaluation.py[line:63] INFO the id is 13001 . The right count is 5743 .Accuracy 0.441735
+Sun, 26 Nov 2017 11:31:21 evaluation.py[line:63] INFO the id is 14001 . The right count is 6260 .Accuracy 0.447111
+Sun, 26 Nov 2017 11:31:43 evaluation.py[line:63] INFO the id is 15001 . The right count is 6835 .Accuracy 0.455636
+Sun, 26 Nov 2017 11:32:10 evaluation.py[line:63] INFO the id is 16001 . The right count is 7525 .Accuracy 0.470283
+Sun, 26 Nov 2017 11:32:34 evaluation.py[line:63] INFO the id is 17001 . The right count is 8085 .Accuracy 0.475560
+Sun, 26 Nov 2017 11:32:59 evaluation.py[line:63] INFO the id is 18001 . The right count is 8695 .Accuracy 0.483029
+Sun, 26 Nov 2017 11:33:25 evaluation.py[line:63] INFO the id is 19001 . The right count is 9199 .Accuracy 0.484132
+Sun, 26 Nov 2017 11:33:39 evaluation.py[line:67] INFO The right count is 9471.The accuracy is 0.484599
+Sun, 26 Nov 2017 11:33:39 utils.py[line:276] INFO loading Word2Vec object from ../res/kd_tree3
+Sun, 26 Nov 2017 11:33:51 utils.py[line:298] INFO loading wv recursively from ../res/kd_tree3.wv.* with mmap=None
+Sun, 26 Nov 2017 11:33:51 utils.py[line:302] INFO loading syn0 from ../res/kd_tree3.wv.syn0.npy with mmap=None
+Sun, 26 Nov 2017 11:33:52 utils.py[line:333] INFO setting ignored attribute syn0norm to None
+Sun, 26 Nov 2017 11:33:52 utils.py[line:302] INFO loading syn1 from ../res/kd_tree3.syn1.npy with mmap=None
+Sun, 26 Nov 2017 11:33:53 utils.py[line:302] INFO loading syn1neg from ../res/kd_tree3.syn1neg.npy with mmap=None
+Sun, 26 Nov 2017 11:33:54 utils.py[line:333] INFO setting ignored attribute cum_table to None
+Sun, 26 Nov 2017 11:33:54 utils.py[line:282] INFO loaded ../res/kd_tree3
+Sun, 26 Nov 2017 11:33:59 keyedvectors.py[line:851] INFO precomputing L2-norms of word weight vectors
+Sun, 26 Nov 2017 11:33:59 evaluation.py[line:63] INFO the id is 1 . The right count is 1 .Accuracy 1.000000
+Sun, 26 Nov 2017 11:34:23 evaluation.py[line:63] INFO the id is 1001 . The right count is 639 .Accuracy 0.638362
+Sun, 26 Nov 2017 11:34:47 evaluation.py[line:63] INFO the id is 2001 . The right count is 1226 .Accuracy 0.612694
+Sun, 26 Nov 2017 11:35:09 evaluation.py[line:63] INFO the id is 3001 . The right count is 1818 .Accuracy 0.605798
+Sun, 26 Nov 2017 11:35:32 evaluation.py[line:63] INFO the id is 4001 . The right count is 2364 .Accuracy 0.590852
+Sun, 26 Nov 2017 11:35:56 evaluation.py[line:63] INFO the id is 5001 . The right count is 2959 .Accuracy 0.591682
+Sun, 26 Nov 2017 11:36:20 evaluation.py[line:63] INFO the id is 6001 . The right count is 3115 .Accuracy 0.519080
+Sun, 26 Nov 2017 11:36:41 evaluation.py[line:63] INFO the id is 7001 . The right count is 3401 .Accuracy 0.485788
+Sun, 26 Nov 2017 11:37:03 evaluation.py[line:63] INFO the id is 8001 . The right count is 3587 .Accuracy 0.448319
+Sun, 26 Nov 2017 11:37:27 evaluation.py[line:63] INFO the id is 9001 . The right count is 4082 .Accuracy 0.453505
+Sun, 26 Nov 2017 11:37:51 evaluation.py[line:63] INFO the id is 10001 . The right count is 4346 .Accuracy 0.434557
+Sun, 26 Nov 2017 11:38:15 evaluation.py[line:63] INFO the id is 11001 . The right count is 4739 .Accuracy 0.430779
+Sun, 26 Nov 2017 11:38:39 evaluation.py[line:63] INFO the id is 12001 . The right count is 5512 .Accuracy 0.459295
+Sun, 26 Nov 2017 11:39:03 evaluation.py[line:63] INFO the id is 13001 . The right count is 5996 .Accuracy 0.461195
+Sun, 26 Nov 2017 11:39:27 evaluation.py[line:63] INFO the id is 14001 . The right count is 6463 .Accuracy 0.461610
+Sun, 26 Nov 2017 11:39:49 evaluation.py[line:63] INFO the id is 15001 . The right count is 7057 .Accuracy 0.470435
+Sun, 26 Nov 2017 11:40:12 evaluation.py[line:63] INFO the id is 16001 . The right count is 7713 .Accuracy 0.482032
+Sun, 26 Nov 2017 11:40:36 evaluation.py[line:63] INFO the id is 17001 . The right count is 8310 .Accuracy 0.488795
+Sun, 26 Nov 2017 11:41:00 evaluation.py[line:63] INFO the id is 18001 . The right count is 8901 .Accuracy 0.494473
+Sun, 26 Nov 2017 11:41:25 evaluation.py[line:63] INFO the id is 19001 . The right count is 9403 .Accuracy 0.494869
+Sun, 26 Nov 2017 11:41:38 evaluation.py[line:67] INFO The right count is 9689.The accuracy is 0.495753
+Sun, 26 Nov 2017 11:41:38 utils.py[line:276] INFO loading Word2Vec object from ../res/huff_beg
+Sun, 26 Nov 2017 11:41:45 utils.py[line:298] INFO loading wv recursively from ../res/huff_beg.wv.* with mmap=None
+Sun, 26 Nov 2017 11:41:45 utils.py[line:302] INFO loading syn0 from ../res/huff_beg.wv.syn0.npy with mmap=None
+Sun, 26 Nov 2017 11:41:46 utils.py[line:333] INFO setting ignored attribute syn0norm to None
+Sun, 26 Nov 2017 11:41:46 utils.py[line:302] INFO loading syn1 from ../res/huff_beg.syn1.npy with mmap=None
+Sun, 26 Nov 2017 11:41:47 utils.py[line:302] INFO loading syn1neg from ../res/huff_beg.syn1neg.npy with mmap=None
+Sun, 26 Nov 2017 11:41:47 utils.py[line:333] INFO setting ignored attribute cum_table to None
+Sun, 26 Nov 2017 11:41:47 utils.py[line:282] INFO loaded ../res/huff_beg
+Sun, 26 Nov 2017 11:41:52 keyedvectors.py[line:851] INFO precomputing L2-norms of word weight vectors
+Sun, 26 Nov 2017 11:41:52 evaluation.py[line:63] INFO the id is 1 . The right count is 1 .Accuracy 1.000000
+Sun, 26 Nov 2017 11:42:15 evaluation.py[line:63] INFO the id is 1001 . The right count is 577 .Accuracy 0.576424
+Sun, 26 Nov 2017 11:42:43 evaluation.py[line:63] INFO the id is 2001 . The right count is 1086 .Accuracy 0.542729
+Sun, 26 Nov 2017 11:43:06 evaluation.py[line:63] INFO the id is 3001 . The right count is 1639 .Accuracy 0.546151
+Sun, 26 Nov 2017 11:43:29 evaluation.py[line:63] INFO the id is 4001 . The right count is 2130 .Accuracy 0.532367
+Sun, 26 Nov 2017 11:43:53 evaluation.py[line:63] INFO the id is 5001 . The right count is 2650 .Accuracy 0.529894
+Sun, 26 Nov 2017 11:44:17 evaluation.py[line:63] INFO the id is 6001 . The right count is 2770 .Accuracy 0.461590
+Sun, 26 Nov 2017 11:44:38 evaluation.py[line:63] INFO the id is 7001 . The right count is 2961 .Accuracy 0.422940
+Sun, 26 Nov 2017 11:45:00 evaluation.py[line:63] INFO the id is 8001 . The right count is 3131 .Accuracy 0.391326
+Sun, 26 Nov 2017 11:45:23 evaluation.py[line:63] INFO the id is 9001 . The right count is 3579 .Accuracy 0.397622
+Sun, 26 Nov 2017 11:45:47 evaluation.py[line:63] INFO the id is 10001 . The right count is 3859 .Accuracy 0.385861
+Sun, 26 Nov 2017 11:46:12 evaluation.py[line:63] INFO the id is 11001 . The right count is 4249 .Accuracy 0.386238
+Sun, 26 Nov 2017 11:46:37 evaluation.py[line:63] INFO the id is 12001 . The right count is 5005 .Accuracy 0.417049
+Sun, 26 Nov 2017 11:47:02 evaluation.py[line:63] INFO the id is 13001 . The right count is 5473 .Accuracy 0.420968
+Sun, 26 Nov 2017 11:47:26 evaluation.py[line:63] INFO the id is 14001 . The right count is 5925 .Accuracy 0.423184
+Sun, 26 Nov 2017 11:47:49 evaluation.py[line:63] INFO the id is 15001 . The right count is 6535 .Accuracy 0.435638
+Sun, 26 Nov 2017 11:48:13 evaluation.py[line:63] INFO the id is 16001 . The right count is 7202 .Accuracy 0.450097
+Sun, 26 Nov 2017 11:48:37 evaluation.py[line:63] INFO the id is 17001 . The right count is 7785 .Accuracy 0.457914
+Sun, 26 Nov 2017 11:49:02 evaluation.py[line:63] INFO the id is 18001 . The right count is 8360 .Accuracy 0.464419
+Sun, 26 Nov 2017 11:49:27 evaluation.py[line:63] INFO the id is 19001 . The right count is 8856 .Accuracy 0.466081
+Sun, 26 Nov 2017 11:49:40 evaluation.py[line:67] INFO The right count is 9139.The accuracy is 0.467612
