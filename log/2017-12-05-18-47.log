@@ -1,0 +1,37 @@
+Tue, 05 Dec 2017 18:47:49 word2vec.py[line:511] WARNING Slow version of word2vec is being used
+Tue, 05 Dec 2017 18:47:50 word2vec.py[line:732] INFO collecting all words and their counts
+Tue, 05 Dec 2017 18:47:50 word2vec.py[line:750] INFO PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+Tue, 05 Dec 2017 18:47:50 word2vec.py[line:762] INFO collected 6087 word types from a corpus of 35399 raw words and 652 sentences
+Tue, 05 Dec 2017 18:47:50 word2vec.py[line:787] INFO Loading a fresh vocabulary
+Tue, 05 Dec 2017 18:47:50 word2vec.py[line:811] INFO min_count=5 retains 1150 unique words (18% of original 6087, drops 4937)
+Tue, 05 Dec 2017 18:47:50 word2vec.py[line:817] INFO min_count=5 leaves 27564 word corpus (77% of original 35399, drops 7835)
+Tue, 05 Dec 2017 18:47:50 word2vec.py[line:876] INFO deleting the raw counts dictionary of 6087 items
+Tue, 05 Dec 2017 18:47:50 word2vec.py[line:879] INFO sample=0.001 downsamples 43 most-common words
+Tue, 05 Dec 2017 18:47:50 word2vec.py[line:882] INFO downsampling leaves estimated 18344 word corpus (66.6% of prior 27564)
+Tue, 05 Dec 2017 18:47:50 word2vec.py[line:1531] INFO estimated required memory for 1150 words and 100 dimensions: 1725000 bytes
+Tue, 05 Dec 2017 18:47:50 word2vec.py[line:908] INFO build Huffman tree
+Tue, 05 Dec 2017 18:47:50 word2vec.py[line:655] INFO constructing a huffman tree from 1150 words
+Tue, 05 Dec 2017 18:47:50 word2vec.py[line:681] INFO built huffman tree with maximum node depth 13
+Tue, 05 Dec 2017 18:47:50 word2vec.py[line:1342] INFO resetting layer weights
+Tue, 05 Dec 2017 18:47:50 word2vec.py[line:999] INFO training model with 3 workers on 1150 vocabulary and 100 features, using sg=0 hs=1 sample=0.001 negative=0 window=5
+Tue, 05 Dec 2017 18:47:53 word2vec.py[line:1148] INFO PROGRESS: at 4.60% examples, 1827 words/s, in_qsize 6, out_qsize 0
+Tue, 05 Dec 2017 18:47:55 word2vec.py[line:1148] INFO PROGRESS: at 21.96% examples, 4255 words/s, in_qsize 5, out_qsize 0
+Tue, 05 Dec 2017 18:47:57 word2vec.py[line:1148] INFO PROGRESS: at 35.21% examples, 5082 words/s, in_qsize 6, out_qsize 0
+Tue, 05 Dec 2017 18:47:59 word2vec.py[line:1148] INFO PROGRESS: at 56.66% examples, 5705 words/s, in_qsize 6, out_qsize 0
+Tue, 05 Dec 2017 18:48:01 word2vec.py[line:1148] INFO PROGRESS: at 69.88% examples, 6195 words/s, in_qsize 5, out_qsize 0
+Tue, 05 Dec 2017 18:48:02 word2vec.py[line:1148] INFO PROGRESS: at 87.76% examples, 6472 words/s, in_qsize 2, out_qsize 1
+Tue, 05 Dec 2017 18:48:02 word2vec.py[line:1130] INFO worker thread finished; awaiting finish of 2 more threads
+Tue, 05 Dec 2017 18:48:02 word2vec.py[line:1130] INFO worker thread finished; awaiting finish of 1 more threads
+Tue, 05 Dec 2017 18:48:03 word2vec.py[line:1130] INFO worker thread finished; awaiting finish of 0 more threads
+Tue, 05 Dec 2017 18:48:03 word2vec.py[line:1163] INFO training on 176995 raw words (91687 effective words) took 12.7s, 7242 effective words/s
+Tue, 05 Dec 2017 18:48:03 word2vec.py[line:1166] WARNING under 10 jobs per worker: consider setting a smaller `batch_words' for smoother alpha decay
+Tue, 05 Dec 2017 18:48:03 utils.py[line:368] INFO saving Word2Vec object under ../res/huf_100_cbow/model/huf_100_cbow, separately None
+Tue, 05 Dec 2017 18:48:03 utils.py[line:454] INFO not storing attribute syn0norm
+Tue, 05 Dec 2017 18:48:03 utils.py[line:454] INFO not storing attribute cum_table
+Tue, 05 Dec 2017 18:48:03 utils.py[line:381] INFO saved ../res/huf_100_cbow/model/huf_100_cbow
+Tue, 05 Dec 2017 18:48:03 word2vec.py[line:905] INFO build KD tree
+Tue, 05 Dec 2017 18:48:03 word2vec.py[line:631] INFO constructing a kd-tree from 1150 words
+Tue, 05 Dec 2017 18:48:05 word2vec.py[line:646] INFO the number of inner_node is 1149
+Tue, 05 Dec 2017 18:48:05 word2vec.py[line:647] INFO built kd tree with maximum node depth 11
+Tue, 05 Dec 2017 18:48:05 word2vec.py[line:1313] INFO updating layer weights
+Tue, 05 Dec 2017 18:48:05 word2vec.py[line:999] INFO training model with 3 workers on 1150 vocabulary and 100 features, using sg=0 hs=1 sample=0.001 negative=0 window=5

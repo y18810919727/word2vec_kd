@@ -124,6 +124,7 @@ from numpy import exp, log, dot, zeros, outer, random, dtype, float32 as REAL, \
     empty, sum as np_sum, ones, logaddexp
 
 from scipy.special import expit
+from sklearn.decomposition import PCA
 
 from gensim import utils, matutils  # utility fnc for pickling, common scipy operations etc
 from six import iteritems, itervalues, string_types
@@ -541,6 +542,9 @@ class Word2Vec(utils.SaveLoad):
         self.model_trimmed_post_training = False
         self.compute_loss = compute_loss
         self.running_training_loss = 0
+        self.kd_tree = False
+        self.pca = False
+        self.new_dimension = self.vector_size
         if sentences is not None:
             if isinstance(sentences, GeneratorType):
                 raise TypeError("You can't pass a generator as the sentences argument. Try an iterator.")
@@ -595,7 +599,7 @@ class Word2Vec(utils.SaveLoad):
             return (0,0)
         best_split = -1
         max_var = 0
-        for d in range(self.vector_size):
+        for d in range(self.new_dimension):
             f=[]
             for w in data_list:
                 f.append(w.vec[d])
@@ -616,11 +620,28 @@ class Word2Vec(utils.SaveLoad):
 
         return (left_inner_num+right_inner_num+1, max(left_dep,right_dep)+1)
 
+    def cal_deep(self,x):
+        t=1
+        deep = 0
+        while t<x:
+            deep+=1
+            t*=2
+        return deep
     def create_binary_kd_tree(self):
         logger.info("constructing a kd-tree from %i words",len(self.wv.vocab))
         datalist = list(itervalues(self.wv.vocab))
-        for w in datalist:
-            w.vec = self.wv[self.wv.index2word[w.index]]
+        if self.pca is False:
+            for w in datalist:
+                w.vec = self.wv[self.wv.index2word[w.index]]
+            self.new_dimension = self.vector_size
+        else:
+            ori_data=[self.wv[self.wv.index2word[w.index]] for w in datalist]
+            self.new_dimension = self.cal_deep(len(datalist))
+            pca = PCA(n_components=self.new_dimension)
+            newData = pca.fit_transform(ori_data)
+            for id,w in enumerate(datalist):
+                w.vec = newData[id]
+        print('The dimension is %i'%(len(datalist[0].vec)))
         (sum_node,max_dep) = self.create_kd_tree_node(datalist,[],[],0)
         logger.info("the number of inner_node is %i",sum_node)
         logger.info("built kd tree with maximum node depth %i", max_dep)
@@ -869,8 +890,10 @@ class Word2Vec(utils.SaveLoad):
 
         return report_values
 
-    def finalize_vocab(self, update=False):
+    def finalize_vocab(self, update=False,kd_tree = False,pca = False):
         """Build tables and model weights based on final vocabulary settings."""
+        self.kd_tree = kd_tree
+        self.pca = pca
         if not self.wv.index2word:
             self.scale_vocab()
         if self.sorted_vocab and not update:
@@ -878,7 +901,7 @@ class Word2Vec(utils.SaveLoad):
         if self.hs:
             # add info about each word's Huffman encoding
             #self.create_binary_tree()
-            if update:
+            if self.kd_tree:
                 logger.info("build KD tree")
                 self.create_binary_kd_tree()
             else:
@@ -938,7 +961,7 @@ class Word2Vec(utils.SaveLoad):
 
     def train(self, sentences, total_examples=None, total_words=None,
               epochs=None, start_alpha=None, end_alpha=None, word_count=0,
-              queue_factor=2, report_delay=1.0, compute_loss=None):
+              queue_factor=2, report_delay=1.0, compute_loss=None,kd_tree = False,pca = False):
         """
         Update the model's neural weights from a sequence of sentences (can be a once-only generator stream).
         For Word2Vec, each sentence must be a list of unicode strings. (Subclasses may accept other examples.)

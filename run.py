@@ -17,7 +17,7 @@ import re
 import sys
 import time
 from myexp import  Myexp
-log_path = './log/'+time.strftime('%Y-%m-%d',time.localtime(time.time()))+'.log'
+log_path = './log/'+time.strftime('%Y-%m-%d-%H-%M',time.localtime(time.time()))+'.log'
 logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s',
                     datefmt='%a, %d %b %Y %H:%M:%S',
@@ -25,7 +25,7 @@ logging.basicConfig(level=logging.INFO,
                     filemode='w'
                     )
 if __name__ == '__main__':
-    exp = Myexp("../data","./log/sent_log")
-    exp.run()
+    exp = Myexp("../data_test",'../res/')
+    exp.run_exp()
 
     #gen = gensim.models.Word2Vec()

@@ -22,22 +22,13 @@ import re
 import time
 import sys
 class Mysentences:
-    def __init__(self,data_dir,log_dir):
+    def __init__(self,data_dir,):
         self.dirname = data_dir
-        self.logdir=log_dir
         self.sent_cnt=0;
-        self.log_file = codecs.open(log_dir,"w",encoding='utf-8')
-        self.log_file.write(time.strftime("%Y-%m-%d :%H-%M-%S\n",time.localtime(time.time())))
-        self.log_file.write("The trained sentences\n")
     def clean_html(self,raw):
         cleanr = re.compile('<.*?>')
         text = re.sub(cleanr,' ',raw)
         return text
-    def wirte_log(self,log):
-        self.sent_cnt = self.sent_cnt+1
-        self.log_file.write("%d.\t"%(self.sent_cnt))
-        self.log_file.write(log)
-        self.log_file.write("\n")
     def __iter__(self):
         for root,dirs,files in os.walk(self.dirname):
             for d in files:
@@ -68,7 +59,7 @@ class Mysentences:
                     continue
 
 if __name__ == '__main__':
-    sentences = Mysentences("../data/test","../data/test/sent_log_file")
+    sentences = Mysentences("../data/test")
     i=1
     for s in sentences:
         print(i,'.',s)

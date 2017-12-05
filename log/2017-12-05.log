@@ -1,0 +1,346 @@
+Tue, 05 Dec 2017 14:25:55 word2vec.py[line:511] WARNING Slow version of word2vec is being used
+Tue, 05 Dec 2017 14:25:55 word2vec.py[line:732] INFO collecting all words and their counts
+Tue, 05 Dec 2017 14:25:55 word2vec.py[line:750] INFO PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+Tue, 05 Dec 2017 14:25:55 word2vec.py[line:762] INFO collected 6087 word types from a corpus of 35399 raw words and 652 sentences
+Tue, 05 Dec 2017 14:25:55 word2vec.py[line:787] INFO Loading a fresh vocabulary
+Tue, 05 Dec 2017 14:25:55 word2vec.py[line:811] INFO min_count=5 retains 1150 unique words (18% of original 6087, drops 4937)
+Tue, 05 Dec 2017 14:25:55 word2vec.py[line:817] INFO min_count=5 leaves 27564 word corpus (77% of original 35399, drops 7835)
+Tue, 05 Dec 2017 14:25:55 word2vec.py[line:876] INFO deleting the raw counts dictionary of 6087 items
+Tue, 05 Dec 2017 14:25:55 word2vec.py[line:879] INFO sample=0.001 downsamples 43 most-common words
+Tue, 05 Dec 2017 14:25:55 word2vec.py[line:882] INFO downsampling leaves estimated 18344 word corpus (66.6% of prior 27564)
+Tue, 05 Dec 2017 14:25:55 word2vec.py[line:1531] INFO estimated required memory for 1150 words and 100 dimensions: 1725000 bytes
+Tue, 05 Dec 2017 14:25:55 word2vec.py[line:908] INFO build Huffman tree
+Tue, 05 Dec 2017 14:25:55 word2vec.py[line:655] INFO constructing a huffman tree from 1150 words
+Tue, 05 Dec 2017 14:25:55 word2vec.py[line:681] INFO built huffman tree with maximum node depth 13
+Tue, 05 Dec 2017 14:25:55 word2vec.py[line:1342] INFO resetting layer weights
+Tue, 05 Dec 2017 14:25:55 word2vec.py[line:999] INFO training model with 3 workers on 1150 vocabulary and 100 features, using sg=0 hs=1 sample=0.001 negative=0 window=5
+Tue, 05 Dec 2017 14:25:58 word2vec.py[line:1148] INFO PROGRESS: at 4.60% examples, 1855 words/s, in_qsize 5, out_qsize 0
+Tue, 05 Dec 2017 14:26:00 word2vec.py[line:1148] INFO PROGRESS: at 21.96% examples, 4213 words/s, in_qsize 6, out_qsize 0
+Tue, 05 Dec 2017 14:26:02 word2vec.py[line:1148] INFO PROGRESS: at 39.51% examples, 5115 words/s, in_qsize 5, out_qsize 0
+Tue, 05 Dec 2017 14:26:04 word2vec.py[line:1148] INFO PROGRESS: at 56.66% examples, 5647 words/s, in_qsize 6, out_qsize 0
+Tue, 05 Dec 2017 14:26:06 word2vec.py[line:1148] INFO PROGRESS: at 69.88% examples, 6107 words/s, in_qsize 5, out_qsize 0
+Tue, 05 Dec 2017 14:26:08 word2vec.py[line:1148] INFO PROGRESS: at 87.15% examples, 6419 words/s, in_qsize 2, out_qsize 1
+Tue, 05 Dec 2017 14:26:08 word2vec.py[line:1130] INFO worker thread finished; awaiting finish of 2 more threads
+Tue, 05 Dec 2017 14:26:08 word2vec.py[line:1130] INFO worker thread finished; awaiting finish of 1 more threads
+Tue, 05 Dec 2017 14:26:08 word2vec.py[line:1130] INFO worker thread finished; awaiting finish of 0 more threads
+Tue, 05 Dec 2017 14:26:08 word2vec.py[line:1163] INFO training on 176995 raw words (91737 effective words) took 12.9s, 7103 effective words/s
+Tue, 05 Dec 2017 14:26:08 word2vec.py[line:1166] WARNING under 10 jobs per worker: consider setting a smaller `batch_words' for smoother alpha decay
+Tue, 05 Dec 2017 14:26:08 utils.py[line:368] INFO saving Word2Vec object under ../res/huf_100_cbow/model/huf_100_cbow, separately None
+Tue, 05 Dec 2017 14:26:08 utils.py[line:454] INFO not storing attribute syn0norm
+Tue, 05 Dec 2017 14:26:08 utils.py[line:454] INFO not storing attribute cum_table
+Tue, 05 Dec 2017 14:26:08 utils.py[line:381] INFO saved ../res/huf_100_cbow/model/huf_100_cbow
+Tue, 05 Dec 2017 14:26:08 word2vec.py[line:905] INFO build KD tree
+Tue, 05 Dec 2017 14:26:08 word2vec.py[line:631] INFO constructing a kd-tree from 1150 words
+Tue, 05 Dec 2017 14:26:11 word2vec.py[line:646] INFO the number of inner_node is 1149
+Tue, 05 Dec 2017 14:26:11 word2vec.py[line:647] INFO built kd tree with maximum node depth 11
+Tue, 05 Dec 2017 14:26:11 word2vec.py[line:1313] INFO updating layer weights
+Tue, 05 Dec 2017 14:26:11 word2vec.py[line:999] INFO training model with 3 workers on 1150 vocabulary and 100 features, using sg=0 hs=1 sample=0.001 negative=0 window=5
+Tue, 05 Dec 2017 14:26:13 word2vec.py[line:1148] INFO PROGRESS: at 4.60% examples, 1883 words/s, in_qsize 5, out_qsize 0
+Tue, 05 Dec 2017 14:26:16 word2vec.py[line:1148] INFO PROGRESS: at 21.96% examples, 4281 words/s, in_qsize 6, out_qsize 0
+Tue, 05 Dec 2017 14:26:18 word2vec.py[line:1148] INFO PROGRESS: at 35.21% examples, 5095 words/s, in_qsize 5, out_qsize 0
+Tue, 05 Dec 2017 14:26:20 word2vec.py[line:1148] INFO PROGRESS: at 52.42% examples, 5596 words/s, in_qsize 5, out_qsize 0
+Tue, 05 Dec 2017 14:26:22 word2vec.py[line:1148] INFO PROGRESS: at 69.88% examples, 6044 words/s, in_qsize 5, out_qsize 0
+Tue, 05 Dec 2017 14:26:24 word2vec.py[line:1148] INFO PROGRESS: at 87.76% examples, 6404 words/s, in_qsize 2, out_qsize 1
+Tue, 05 Dec 2017 14:26:24 word2vec.py[line:1130] INFO worker thread finished; awaiting finish of 2 more threads
+Tue, 05 Dec 2017 14:26:24 word2vec.py[line:1130] INFO worker thread finished; awaiting finish of 1 more threads
+Tue, 05 Dec 2017 14:26:24 word2vec.py[line:1130] INFO worker thread finished; awaiting finish of 0 more threads
+Tue, 05 Dec 2017 14:26:24 word2vec.py[line:1163] INFO training on 176995 raw words (91874 effective words) took 12.9s, 7099 effective words/s
+Tue, 05 Dec 2017 14:26:24 word2vec.py[line:1166] WARNING under 10 jobs per worker: consider setting a smaller `batch_words' for smoother alpha decay
+Tue, 05 Dec 2017 14:26:24 utils.py[line:368] INFO saving Word2Vec object under ../res/kd_100_cbow/model/kd_100_cbow, separately None
+Tue, 05 Dec 2017 14:26:24 utils.py[line:454] INFO not storing attribute syn0norm
+Tue, 05 Dec 2017 14:26:24 utils.py[line:454] INFO not storing attribute cum_table
+Tue, 05 Dec 2017 14:26:24 utils.py[line:381] INFO saved ../res/kd_100_cbow/model/kd_100_cbow
+Tue, 05 Dec 2017 14:26:24 word2vec.py[line:905] INFO build KD tree
+Tue, 05 Dec 2017 14:26:24 word2vec.py[line:631] INFO constructing a kd-tree from 1150 words
+Tue, 05 Dec 2017 14:26:24 word2vec.py[line:646] INFO the number of inner_node is 1149
+Tue, 05 Dec 2017 14:26:24 word2vec.py[line:647] INFO built kd tree with maximum node depth 11
+Tue, 05 Dec 2017 14:26:24 word2vec.py[line:1313] INFO updating layer weights
+Tue, 05 Dec 2017 14:26:24 word2vec.py[line:999] INFO training model with 3 workers on 1150 vocabulary and 100 features, using sg=0 hs=1 sample=0.001 negative=0 window=5
+Tue, 05 Dec 2017 14:26:27 word2vec.py[line:1148] INFO PROGRESS: at 3.59% examples, 1923 words/s, in_qsize 6, out_qsize 0
+Tue, 05 Dec 2017 14:26:29 word2vec.py[line:1148] INFO PROGRESS: at 21.96% examples, 4316 words/s, in_qsize 6, out_qsize 0
+Tue, 05 Dec 2017 14:26:31 word2vec.py[line:1148] INFO PROGRESS: at 35.21% examples, 5114 words/s, in_qsize 5, out_qsize 0
+Tue, 05 Dec 2017 14:26:33 word2vec.py[line:1148] INFO PROGRESS: at 52.42% examples, 5693 words/s, in_qsize 5, out_qsize 0
+Tue, 05 Dec 2017 14:26:35 word2vec.py[line:1148] INFO PROGRESS: at 69.88% examples, 6140 words/s, in_qsize 5, out_qsize 0
+Tue, 05 Dec 2017 14:26:37 word2vec.py[line:1148] INFO PROGRESS: at 87.15% examples, 6443 words/s, in_qsize 2, out_qsize 1
+Tue, 05 Dec 2017 14:26:37 word2vec.py[line:1130] INFO worker thread finished; awaiting finish of 2 more threads
+Tue, 05 Dec 2017 14:26:37 word2vec.py[line:1130] INFO worker thread finished; awaiting finish of 1 more threads
+Tue, 05 Dec 2017 14:26:37 word2vec.py[line:1130] INFO worker thread finished; awaiting finish of 0 more threads
+Tue, 05 Dec 2017 14:26:37 word2vec.py[line:1163] INFO training on 176995 raw words (91612 effective words) took 12.8s, 7133 effective words/s
+Tue, 05 Dec 2017 14:26:37 word2vec.py[line:1166] WARNING under 10 jobs per worker: consider setting a smaller `batch_words' for smoother alpha decay
+Tue, 05 Dec 2017 14:26:37 utils.py[line:368] INFO saving Word2Vec object under ../res/pca_100_cbow/model/pca_100_cbow, separately None
+Tue, 05 Dec 2017 14:26:37 utils.py[line:454] INFO not storing attribute syn0norm
+Tue, 05 Dec 2017 14:26:37 utils.py[line:454] INFO not storing attribute cum_table
+Tue, 05 Dec 2017 14:26:37 utils.py[line:381] INFO saved ../res/pca_100_cbow/model/pca_100_cbow
+Tue, 05 Dec 2017 14:26:37 word2vec.py[line:511] WARNING Slow version of word2vec is being used
+Tue, 05 Dec 2017 14:26:37 word2vec.py[line:732] INFO collecting all words and their counts
+Tue, 05 Dec 2017 14:26:37 word2vec.py[line:750] INFO PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+Tue, 05 Dec 2017 14:26:37 word2vec.py[line:762] INFO collected 6087 word types from a corpus of 35399 raw words and 652 sentences
+Tue, 05 Dec 2017 14:26:37 word2vec.py[line:787] INFO Loading a fresh vocabulary
+Tue, 05 Dec 2017 14:26:37 word2vec.py[line:811] INFO min_count=5 retains 1150 unique words (18% of original 6087, drops 4937)
+Tue, 05 Dec 2017 14:26:37 word2vec.py[line:817] INFO min_count=5 leaves 27564 word corpus (77% of original 35399, drops 7835)
+Tue, 05 Dec 2017 14:26:37 word2vec.py[line:876] INFO deleting the raw counts dictionary of 6087 items
+Tue, 05 Dec 2017 14:26:37 word2vec.py[line:879] INFO sample=0.001 downsamples 43 most-common words
+Tue, 05 Dec 2017 14:26:37 word2vec.py[line:882] INFO downsampling leaves estimated 18344 word corpus (66.6% of prior 27564)
+Tue, 05 Dec 2017 14:26:37 word2vec.py[line:1531] INFO estimated required memory for 1150 words and 100 dimensions: 1725000 bytes
+Tue, 05 Dec 2017 14:26:37 word2vec.py[line:908] INFO build Huffman tree
+Tue, 05 Dec 2017 14:26:37 word2vec.py[line:655] INFO constructing a huffman tree from 1150 words
+Tue, 05 Dec 2017 14:26:37 word2vec.py[line:681] INFO built huffman tree with maximum node depth 13
+Tue, 05 Dec 2017 14:26:37 word2vec.py[line:1342] INFO resetting layer weights
+Tue, 05 Dec 2017 14:26:37 word2vec.py[line:999] INFO training model with 3 workers on 1150 vocabulary and 100 features, using sg=1 hs=1 sample=0.001 negative=0 window=5
+Tue, 05 Dec 2017 14:26:43 word2vec.py[line:1148] INFO PROGRESS: at 9.08% examples, 856 words/s, in_qsize 6, out_qsize 0
+Tue, 05 Dec 2017 14:26:49 word2vec.py[line:1148] INFO PROGRESS: at 21.96% examples, 1738 words/s, in_qsize 5, out_qsize 0
+Tue, 05 Dec 2017 14:26:55 word2vec.py[line:1148] INFO PROGRESS: at 39.51% examples, 2052 words/s, in_qsize 6, out_qsize 0
+Tue, 05 Dec 2017 14:27:00 word2vec.py[line:1148] INFO PROGRESS: at 56.66% examples, 2237 words/s, in_qsize 5, out_qsize 0
+Tue, 05 Dec 2017 14:27:01 word2vec.py[line:1148] INFO PROGRESS: at 65.83% examples, 2559 words/s, in_qsize 5, out_qsize 0
+Tue, 05 Dec 2017 14:27:06 word2vec.py[line:1148] INFO PROGRESS: at 69.88% examples, 2354 words/s, in_qsize 5, out_qsize 0
+Tue, 05 Dec 2017 14:27:07 word2vec.py[line:1148] INFO PROGRESS: at 83.65% examples, 2592 words/s, in_qsize 3, out_qsize 0
+Tue, 05 Dec 2017 14:27:11 word2vec.py[line:1148] INFO PROGRESS: at 87.15% examples, 2425 words/s, in_qsize 2, out_qsize 1
+Tue, 05 Dec 2017 14:27:11 word2vec.py[line:1130] INFO worker thread finished; awaiting finish of 2 more threads
+Tue, 05 Dec 2017 14:27:11 word2vec.py[line:1130] INFO worker thread finished; awaiting finish of 1 more threads
+Tue, 05 Dec 2017 14:27:12 word2vec.py[line:1130] INFO worker thread finished; awaiting finish of 0 more threads
+Tue, 05 Dec 2017 14:27:12 word2vec.py[line:1163] INFO training on 176995 raw words (91840 effective words) took 34.3s, 2679 effective words/s
+Tue, 05 Dec 2017 14:27:12 word2vec.py[line:1166] WARNING under 10 jobs per worker: consider setting a smaller `batch_words' for smoother alpha decay
+Tue, 05 Dec 2017 14:27:12 utils.py[line:368] INFO saving Word2Vec object under ../res/huf_100_sg/model/huf_100_sg, separately None
+Tue, 05 Dec 2017 14:27:12 utils.py[line:454] INFO not storing attribute syn0norm
+Tue, 05 Dec 2017 14:27:12 utils.py[line:454] INFO not storing attribute cum_table
+Tue, 05 Dec 2017 14:27:12 utils.py[line:381] INFO saved ../res/huf_100_sg/model/huf_100_sg
+Tue, 05 Dec 2017 14:27:12 word2vec.py[line:905] INFO build KD tree
+Tue, 05 Dec 2017 14:27:12 word2vec.py[line:631] INFO constructing a kd-tree from 1150 words
+Tue, 05 Dec 2017 14:27:15 word2vec.py[line:646] INFO the number of inner_node is 1149
+Tue, 05 Dec 2017 14:27:15 word2vec.py[line:647] INFO built kd tree with maximum node depth 11
+Tue, 05 Dec 2017 14:27:15 word2vec.py[line:1313] INFO updating layer weights
+Tue, 05 Dec 2017 14:27:15 word2vec.py[line:999] INFO training model with 3 workers on 1150 vocabulary and 100 features, using sg=1 hs=1 sample=0.001 negative=0 window=5
+Tue, 05 Dec 2017 14:27:21 word2vec.py[line:1148] INFO PROGRESS: at 4.60% examples, 814 words/s, in_qsize 5, out_qsize 0
+Tue, 05 Dec 2017 14:27:26 word2vec.py[line:1148] INFO PROGRESS: at 21.96% examples, 1723 words/s, in_qsize 5, out_qsize 0
+Tue, 05 Dec 2017 14:27:32 word2vec.py[line:1148] INFO PROGRESS: at 39.51% examples, 2036 words/s, in_qsize 5, out_qsize 0
+Tue, 05 Dec 2017 14:27:38 word2vec.py[line:1148] INFO PROGRESS: at 56.66% examples, 2235 words/s, in_qsize 6, out_qsize 0
+Tue, 05 Dec 2017 14:27:39 word2vec.py[line:1148] INFO PROGRESS: at 65.83% examples, 2536 words/s, in_qsize 6, out_qsize 0
+Tue, 05 Dec 2017 14:27:43 word2vec.py[line:1148] INFO PROGRESS: at 69.88% examples, 2343 words/s, in_qsize 5, out_qsize 0
+Tue, 05 Dec 2017 14:27:45 word2vec.py[line:1148] INFO PROGRESS: at 83.65% examples, 2568 words/s, in_qsize 3, out_qsize 0
+Tue, 05 Dec 2017 14:27:49 word2vec.py[line:1148] INFO PROGRESS: at 87.15% examples, 2409 words/s, in_qsize 2, out_qsize 1
+Tue, 05 Dec 2017 14:27:49 word2vec.py[line:1130] INFO worker thread finished; awaiting finish of 2 more threads
+Tue, 05 Dec 2017 14:27:49 word2vec.py[line:1130] INFO worker thread finished; awaiting finish of 1 more threads
+Tue, 05 Dec 2017 14:27:49 word2vec.py[line:1130] INFO worker thread finished; awaiting finish of 0 more threads
+Tue, 05 Dec 2017 14:27:49 word2vec.py[line:1163] INFO training on 176995 raw words (91600 effective words) took 34.4s, 2665 effective words/s
+Tue, 05 Dec 2017 14:27:49 word2vec.py[line:1166] WARNING under 10 jobs per worker: consider setting a smaller `batch_words' for smoother alpha decay
+Tue, 05 Dec 2017 14:27:49 utils.py[line:368] INFO saving Word2Vec object under ../res/kd_100_sg/model/kd_100_sg, separately None
+Tue, 05 Dec 2017 14:27:49 utils.py[line:454] INFO not storing attribute syn0norm
+Tue, 05 Dec 2017 14:27:49 utils.py[line:454] INFO not storing attribute cum_table
+Tue, 05 Dec 2017 14:27:49 utils.py[line:381] INFO saved ../res/kd_100_sg/model/kd_100_sg
+Tue, 05 Dec 2017 14:27:49 word2vec.py[line:905] INFO build KD tree
+Tue, 05 Dec 2017 14:27:49 word2vec.py[line:631] INFO constructing a kd-tree from 1150 words
+Tue, 05 Dec 2017 14:27:49 word2vec.py[line:646] INFO the number of inner_node is 1149
+Tue, 05 Dec 2017 14:27:49 word2vec.py[line:647] INFO built kd tree with maximum node depth 11
+Tue, 05 Dec 2017 14:27:49 word2vec.py[line:1313] INFO updating layer weights
+Tue, 05 Dec 2017 14:27:49 word2vec.py[line:999] INFO training model with 3 workers on 1150 vocabulary and 100 features, using sg=1 hs=1 sample=0.001 negative=0 window=5
+Tue, 05 Dec 2017 14:27:55 word2vec.py[line:1148] INFO PROGRESS: at 9.08% examples, 868 words/s, in_qsize 5, out_qsize 0
+Tue, 05 Dec 2017 14:28:01 word2vec.py[line:1148] INFO PROGRESS: at 21.96% examples, 1743 words/s, in_qsize 5, out_qsize 0
+Tue, 05 Dec 2017 14:28:07 word2vec.py[line:1148] INFO PROGRESS: at 39.51% examples, 2061 words/s, in_qsize 5, out_qsize 0
+Tue, 05 Dec 2017 14:28:08 word2vec.py[line:1148] INFO PROGRESS: at 47.48% examples, 2477 words/s, in_qsize 6, out_qsize 0
+Tue, 05 Dec 2017 14:28:12 word2vec.py[line:1148] INFO PROGRESS: at 56.66% examples, 2254 words/s, in_qsize 6, out_qsize 0
+Tue, 05 Dec 2017 14:28:14 word2vec.py[line:1148] INFO PROGRESS: at 65.83% examples, 2539 words/s, in_qsize 6, out_qsize 0
+Tue, 05 Dec 2017 14:28:18 word2vec.py[line:1148] INFO PROGRESS: at 69.88% examples, 2356 words/s, in_qsize 5, out_qsize 0
+Tue, 05 Dec 2017 14:28:19 word2vec.py[line:1148] INFO PROGRESS: at 79.11% examples, 2459 words/s, in_qsize 4, out_qsize 0
+Tue, 05 Dec 2017 14:28:23 word2vec.py[line:1148] INFO PROGRESS: at 87.15% examples, 2429 words/s, in_qsize 2, out_qsize 1
+Tue, 05 Dec 2017 14:28:23 word2vec.py[line:1130] INFO worker thread finished; awaiting finish of 2 more threads
+Tue, 05 Dec 2017 14:28:23 word2vec.py[line:1130] INFO worker thread finished; awaiting finish of 1 more threads
+Tue, 05 Dec 2017 14:28:24 word2vec.py[line:1130] INFO worker thread finished; awaiting finish of 0 more threads
+Tue, 05 Dec 2017 14:28:24 word2vec.py[line:1163] INFO training on 176995 raw words (91705 effective words) took 34.3s, 2672 effective words/s
+Tue, 05 Dec 2017 14:28:24 word2vec.py[line:1166] WARNING under 10 jobs per worker: consider setting a smaller `batch_words' for smoother alpha decay
+Tue, 05 Dec 2017 14:28:24 utils.py[line:368] INFO saving Word2Vec object under ../res/pca_100_sg/model/pca_100_sg, separately None
+Tue, 05 Dec 2017 14:28:24 utils.py[line:454] INFO not storing attribute syn0norm
+Tue, 05 Dec 2017 14:28:24 utils.py[line:454] INFO not storing attribute cum_table
+Tue, 05 Dec 2017 14:28:24 utils.py[line:381] INFO saved ../res/pca_100_sg/model/pca_100_sg
+Tue, 05 Dec 2017 14:28:24 word2vec.py[line:511] WARNING Slow version of word2vec is being used
+Tue, 05 Dec 2017 14:28:24 word2vec.py[line:732] INFO collecting all words and their counts
+Tue, 05 Dec 2017 14:28:24 word2vec.py[line:750] INFO PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+Tue, 05 Dec 2017 14:28:24 word2vec.py[line:762] INFO collected 6087 word types from a corpus of 35399 raw words and 652 sentences
+Tue, 05 Dec 2017 14:28:24 word2vec.py[line:787] INFO Loading a fresh vocabulary
+Tue, 05 Dec 2017 14:28:24 word2vec.py[line:811] INFO min_count=5 retains 1150 unique words (18% of original 6087, drops 4937)
+Tue, 05 Dec 2017 14:28:24 word2vec.py[line:817] INFO min_count=5 leaves 27564 word corpus (77% of original 35399, drops 7835)
+Tue, 05 Dec 2017 14:28:24 word2vec.py[line:876] INFO deleting the raw counts dictionary of 6087 items
+Tue, 05 Dec 2017 14:28:24 word2vec.py[line:879] INFO sample=0.001 downsamples 43 most-common words
+Tue, 05 Dec 2017 14:28:24 word2vec.py[line:882] INFO downsampling leaves estimated 18344 word corpus (66.6% of prior 27564)
+Tue, 05 Dec 2017 14:28:24 word2vec.py[line:1531] INFO estimated required memory for 1150 words and 300 dimensions: 3565000 bytes
+Tue, 05 Dec 2017 14:28:24 word2vec.py[line:908] INFO build Huffman tree
+Tue, 05 Dec 2017 14:28:24 word2vec.py[line:655] INFO constructing a huffman tree from 1150 words
+Tue, 05 Dec 2017 14:28:24 word2vec.py[line:681] INFO built huffman tree with maximum node depth 13
+Tue, 05 Dec 2017 14:28:24 word2vec.py[line:1342] INFO resetting layer weights
+Tue, 05 Dec 2017 14:28:24 word2vec.py[line:999] INFO training model with 3 workers on 1150 vocabulary and 300 features, using sg=0 hs=1 sample=0.001 negative=0 window=5
+Tue, 05 Dec 2017 14:28:27 word2vec.py[line:1148] INFO PROGRESS: at 4.60% examples, 1693 words/s, in_qsize 5, out_qsize 0
+Tue, 05 Dec 2017 14:28:29 word2vec.py[line:1148] INFO PROGRESS: at 21.96% examples, 3817 words/s, in_qsize 5, out_qsize 0
+Tue, 05 Dec 2017 14:28:32 word2vec.py[line:1148] INFO PROGRESS: at 35.21% examples, 4566 words/s, in_qsize 5, out_qsize 0
+Tue, 05 Dec 2017 14:28:34 word2vec.py[line:1148] INFO PROGRESS: at 56.66% examples, 5067 words/s, in_qsize 6, out_qsize 0
+Tue, 05 Dec 2017 14:28:36 word2vec.py[line:1148] INFO PROGRESS: at 69.88% examples, 5458 words/s, in_qsize 5, out_qsize 0
+Tue, 05 Dec 2017 14:28:38 word2vec.py[line:1148] INFO PROGRESS: at 87.76% examples, 5700 words/s, in_qsize 2, out_qsize 1
+Tue, 05 Dec 2017 14:28:38 word2vec.py[line:1130] INFO worker thread finished; awaiting finish of 2 more threads
+Tue, 05 Dec 2017 14:28:38 word2vec.py[line:1130] INFO worker thread finished; awaiting finish of 1 more threads
+Tue, 05 Dec 2017 14:28:38 word2vec.py[line:1130] INFO worker thread finished; awaiting finish of 0 more threads
+Tue, 05 Dec 2017 14:28:38 word2vec.py[line:1163] INFO training on 176995 raw words (91770 effective words) took 14.5s, 6341 effective words/s
+Tue, 05 Dec 2017 14:28:38 word2vec.py[line:1166] WARNING under 10 jobs per worker: consider setting a smaller `batch_words' for smoother alpha decay
+Tue, 05 Dec 2017 14:28:38 utils.py[line:368] INFO saving Word2Vec object under ../res/huf_300_cbow/model/huf_300_cbow, separately None
+Tue, 05 Dec 2017 14:28:38 utils.py[line:454] INFO not storing attribute syn0norm
+Tue, 05 Dec 2017 14:28:38 utils.py[line:454] INFO not storing attribute cum_table
+Tue, 05 Dec 2017 14:28:38 utils.py[line:381] INFO saved ../res/huf_300_cbow/model/huf_300_cbow
+Tue, 05 Dec 2017 14:28:38 word2vec.py[line:905] INFO build KD tree
+Tue, 05 Dec 2017 14:28:38 word2vec.py[line:631] INFO constructing a kd-tree from 1150 words
+Tue, 05 Dec 2017 14:28:47 word2vec.py[line:646] INFO the number of inner_node is 1149
+Tue, 05 Dec 2017 14:28:47 word2vec.py[line:647] INFO built kd tree with maximum node depth 11
+Tue, 05 Dec 2017 14:28:47 word2vec.py[line:1313] INFO updating layer weights
+Tue, 05 Dec 2017 14:28:47 word2vec.py[line:999] INFO training model with 3 workers on 1150 vocabulary and 300 features, using sg=0 hs=1 sample=0.001 negative=0 window=5
+Tue, 05 Dec 2017 14:28:50 word2vec.py[line:1148] INFO PROGRESS: at 4.60% examples, 1709 words/s, in_qsize 6, out_qsize 0
+Tue, 05 Dec 2017 14:28:52 word2vec.py[line:1148] INFO PROGRESS: at 21.81% examples, 3799 words/s, in_qsize 6, out_qsize 0
+Tue, 05 Dec 2017 14:28:55 word2vec.py[line:1148] INFO PROGRESS: at 35.21% examples, 4576 words/s, in_qsize 6, out_qsize 0
+Tue, 05 Dec 2017 14:28:57 word2vec.py[line:1148] INFO PROGRESS: at 56.66% examples, 5072 words/s, in_qsize 5, out_qsize 0
+Tue, 05 Dec 2017 14:28:59 word2vec.py[line:1148] INFO PROGRESS: at 69.88% examples, 5433 words/s, in_qsize 5, out_qsize 0
+Tue, 05 Dec 2017 14:29:01 word2vec.py[line:1148] INFO PROGRESS: at 87.76% examples, 5721 words/s, in_qsize 2, out_qsize 1
+Tue, 05 Dec 2017 14:29:01 word2vec.py[line:1130] INFO worker thread finished; awaiting finish of 2 more threads
+Tue, 05 Dec 2017 14:29:02 word2vec.py[line:1130] INFO worker thread finished; awaiting finish of 1 more threads
+Tue, 05 Dec 2017 14:29:02 word2vec.py[line:1130] INFO worker thread finished; awaiting finish of 0 more threads
+Tue, 05 Dec 2017 14:29:02 word2vec.py[line:1163] INFO training on 176995 raw words (91811 effective words) took 14.5s, 6347 effective words/s
+Tue, 05 Dec 2017 14:29:02 word2vec.py[line:1166] WARNING under 10 jobs per worker: consider setting a smaller `batch_words' for smoother alpha decay
+Tue, 05 Dec 2017 14:29:02 utils.py[line:368] INFO saving Word2Vec object under ../res/kd_300_cbow/model/kd_300_cbow, separately None
+Tue, 05 Dec 2017 14:29:02 utils.py[line:454] INFO not storing attribute syn0norm
+Tue, 05 Dec 2017 14:29:02 utils.py[line:454] INFO not storing attribute cum_table
+Tue, 05 Dec 2017 14:29:02 utils.py[line:381] INFO saved ../res/kd_300_cbow/model/kd_300_cbow
+Tue, 05 Dec 2017 14:29:02 word2vec.py[line:905] INFO build KD tree
+Tue, 05 Dec 2017 14:29:02 word2vec.py[line:631] INFO constructing a kd-tree from 1150 words
+Tue, 05 Dec 2017 14:29:02 word2vec.py[line:646] INFO the number of inner_node is 1149
+Tue, 05 Dec 2017 14:29:02 word2vec.py[line:647] INFO built kd tree with maximum node depth 11
+Tue, 05 Dec 2017 14:29:02 word2vec.py[line:1313] INFO updating layer weights
+Tue, 05 Dec 2017 14:29:02 word2vec.py[line:999] INFO training model with 3 workers on 1150 vocabulary and 300 features, using sg=0 hs=1 sample=0.001 negative=0 window=5
+Tue, 05 Dec 2017 14:29:05 word2vec.py[line:1148] INFO PROGRESS: at 4.60% examples, 1676 words/s, in_qsize 5, out_qsize 0
+Tue, 05 Dec 2017 14:29:07 word2vec.py[line:1148] INFO PROGRESS: at 21.81% examples, 3794 words/s, in_qsize 5, out_qsize 0
+Tue, 05 Dec 2017 14:29:10 word2vec.py[line:1148] INFO PROGRESS: at 35.21% examples, 4586 words/s, in_qsize 6, out_qsize 0
+Tue, 05 Dec 2017 14:29:12 word2vec.py[line:1148] INFO PROGRESS: at 56.66% examples, 5091 words/s, in_qsize 5, out_qsize 0
+Tue, 05 Dec 2017 14:29:14 word2vec.py[line:1148] INFO PROGRESS: at 69.88% examples, 5471 words/s, in_qsize 5, out_qsize 0
+Tue, 05 Dec 2017 14:29:16 word2vec.py[line:1148] INFO PROGRESS: at 87.76% examples, 5697 words/s, in_qsize 2, out_qsize 1
+Tue, 05 Dec 2017 14:29:16 word2vec.py[line:1130] INFO worker thread finished; awaiting finish of 2 more threads
+Tue, 05 Dec 2017 14:29:16 word2vec.py[line:1130] INFO worker thread finished; awaiting finish of 1 more threads
+Tue, 05 Dec 2017 14:29:16 word2vec.py[line:1130] INFO worker thread finished; awaiting finish of 0 more threads
+Tue, 05 Dec 2017 14:29:16 word2vec.py[line:1163] INFO training on 176995 raw words (91620 effective words) took 14.4s, 6357 effective words/s
+Tue, 05 Dec 2017 14:29:16 word2vec.py[line:1166] WARNING under 10 jobs per worker: consider setting a smaller `batch_words' for smoother alpha decay
+Tue, 05 Dec 2017 14:29:16 utils.py[line:368] INFO saving Word2Vec object under ../res/pca_300_cbow/model/pca_300_cbow, separately None
+Tue, 05 Dec 2017 14:29:16 utils.py[line:454] INFO not storing attribute syn0norm
+Tue, 05 Dec 2017 14:29:16 utils.py[line:454] INFO not storing attribute cum_table
+Tue, 05 Dec 2017 14:29:16 utils.py[line:381] INFO saved ../res/pca_300_cbow/model/pca_300_cbow
+Tue, 05 Dec 2017 14:29:16 word2vec.py[line:511] WARNING Slow version of word2vec is being used
+Tue, 05 Dec 2017 14:29:16 word2vec.py[line:732] INFO collecting all words and their counts
+Tue, 05 Dec 2017 14:29:16 word2vec.py[line:750] INFO PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+Tue, 05 Dec 2017 14:29:17 word2vec.py[line:762] INFO collected 6087 word types from a corpus of 35399 raw words and 652 sentences
+Tue, 05 Dec 2017 14:29:17 word2vec.py[line:787] INFO Loading a fresh vocabulary
+Tue, 05 Dec 2017 14:29:17 word2vec.py[line:811] INFO min_count=5 retains 1150 unique words (18% of original 6087, drops 4937)
+Tue, 05 Dec 2017 14:29:17 word2vec.py[line:817] INFO min_count=5 leaves 27564 word corpus (77% of original 35399, drops 7835)
+Tue, 05 Dec 2017 14:29:17 word2vec.py[line:876] INFO deleting the raw counts dictionary of 6087 items
+Tue, 05 Dec 2017 14:29:17 word2vec.py[line:879] INFO sample=0.001 downsamples 43 most-common words
+Tue, 05 Dec 2017 14:29:17 word2vec.py[line:882] INFO downsampling leaves estimated 18344 word corpus (66.6% of prior 27564)
+Tue, 05 Dec 2017 14:29:17 word2vec.py[line:1531] INFO estimated required memory for 1150 words and 300 dimensions: 3565000 bytes
+Tue, 05 Dec 2017 14:29:17 word2vec.py[line:908] INFO build Huffman tree
+Tue, 05 Dec 2017 14:29:17 word2vec.py[line:655] INFO constructing a huffman tree from 1150 words
+Tue, 05 Dec 2017 14:29:17 word2vec.py[line:681] INFO built huffman tree with maximum node depth 13
+Tue, 05 Dec 2017 14:29:17 word2vec.py[line:1342] INFO resetting layer weights
+Tue, 05 Dec 2017 14:29:17 word2vec.py[line:999] INFO training model with 3 workers on 1150 vocabulary and 300 features, using sg=1 hs=1 sample=0.001 negative=0 window=5
+Tue, 05 Dec 2017 14:29:23 word2vec.py[line:1148] INFO PROGRESS: at 9.08% examples, 778 words/s, in_qsize 6, out_qsize 0
+Tue, 05 Dec 2017 14:29:30 word2vec.py[line:1148] INFO PROGRESS: at 21.96% examples, 1565 words/s, in_qsize 6, out_qsize 0
+Tue, 05 Dec 2017 14:29:36 word2vec.py[line:1148] INFO PROGRESS: at 39.51% examples, 1854 words/s, in_qsize 6, out_qsize 0
+Tue, 05 Dec 2017 14:29:37 word2vec.py[line:1148] INFO PROGRESS: at 47.48% examples, 2267 words/s, in_qsize 5, out_qsize 0
+Tue, 05 Dec 2017 14:29:42 word2vec.py[line:1148] INFO PROGRESS: at 56.66% examples, 2024 words/s, in_qsize 5, out_qsize 0
+Tue, 05 Dec 2017 14:29:43 word2vec.py[line:1148] INFO PROGRESS: at 65.83% examples, 2321 words/s, in_qsize 6, out_qsize 0
+Tue, 05 Dec 2017 14:29:48 word2vec.py[line:1148] INFO PROGRESS: at 69.88% examples, 2127 words/s, in_qsize 5, out_qsize 0
+Tue, 05 Dec 2017 14:29:49 word2vec.py[line:1148] INFO PROGRESS: at 79.11% examples, 2218 words/s, in_qsize 4, out_qsize 0
+Tue, 05 Dec 2017 14:29:54 word2vec.py[line:1148] INFO PROGRESS: at 87.76% examples, 2176 words/s, in_qsize 2, out_qsize 1
+Tue, 05 Dec 2017 14:29:54 word2vec.py[line:1130] INFO worker thread finished; awaiting finish of 2 more threads
+Tue, 05 Dec 2017 14:29:54 word2vec.py[line:1130] INFO worker thread finished; awaiting finish of 1 more threads
+Tue, 05 Dec 2017 14:29:54 word2vec.py[line:1130] INFO worker thread finished; awaiting finish of 0 more threads
+Tue, 05 Dec 2017 14:29:54 word2vec.py[line:1163] INFO training on 176995 raw words (91767 effective words) took 37.8s, 2427 effective words/s
+Tue, 05 Dec 2017 14:29:54 word2vec.py[line:1166] WARNING under 10 jobs per worker: consider setting a smaller `batch_words' for smoother alpha decay
+Tue, 05 Dec 2017 14:29:54 utils.py[line:368] INFO saving Word2Vec object under ../res/huf_300_sg/model/huf_300_sg, separately None
+Tue, 05 Dec 2017 14:29:54 utils.py[line:454] INFO not storing attribute syn0norm
+Tue, 05 Dec 2017 14:29:54 utils.py[line:454] INFO not storing attribute cum_table
+Tue, 05 Dec 2017 14:29:55 utils.py[line:381] INFO saved ../res/huf_300_sg/model/huf_300_sg
+Tue, 05 Dec 2017 14:29:55 word2vec.py[line:905] INFO build KD tree
+Tue, 05 Dec 2017 14:29:55 word2vec.py[line:631] INFO constructing a kd-tree from 1150 words
+Tue, 05 Dec 2017 14:30:03 word2vec.py[line:646] INFO the number of inner_node is 1149
+Tue, 05 Dec 2017 14:30:03 word2vec.py[line:647] INFO built kd tree with maximum node depth 11
+Tue, 05 Dec 2017 14:30:03 word2vec.py[line:1313] INFO updating layer weights
+Tue, 05 Dec 2017 14:30:03 word2vec.py[line:999] INFO training model with 3 workers on 1150 vocabulary and 300 features, using sg=1 hs=1 sample=0.001 negative=0 window=5
+Tue, 05 Dec 2017 14:30:10 word2vec.py[line:1148] INFO PROGRESS: at 9.08% examples, 773 words/s, in_qsize 5, out_qsize 0
+Tue, 05 Dec 2017 14:30:16 word2vec.py[line:1148] INFO PROGRESS: at 21.96% examples, 1585 words/s, in_qsize 5, out_qsize 0
+Tue, 05 Dec 2017 14:30:23 word2vec.py[line:1148] INFO PROGRESS: at 35.21% examples, 1854 words/s, in_qsize 6, out_qsize 0
+Tue, 05 Dec 2017 14:30:24 word2vec.py[line:1148] INFO PROGRESS: at 47.48% examples, 2256 words/s, in_qsize 5, out_qsize 0
+Tue, 05 Dec 2017 14:30:28 word2vec.py[line:1148] INFO PROGRESS: at 56.66% examples, 2050 words/s, in_qsize 6, out_qsize 0
+Tue, 05 Dec 2017 14:30:30 word2vec.py[line:1148] INFO PROGRESS: at 65.83% examples, 2304 words/s, in_qsize 6, out_qsize 0
+Tue, 05 Dec 2017 14:30:34 word2vec.py[line:1148] INFO PROGRESS: at 69.88% examples, 2150 words/s, in_qsize 5, out_qsize 0
+Tue, 05 Dec 2017 14:30:36 word2vec.py[line:1148] INFO PROGRESS: at 83.65% examples, 2328 words/s, in_qsize 3, out_qsize 0
+Tue, 05 Dec 2017 14:30:41 word2vec.py[line:1148] INFO PROGRESS: at 87.15% examples, 2211 words/s, in_qsize 2, out_qsize 1
+Tue, 05 Dec 2017 14:30:41 word2vec.py[line:1130] INFO worker thread finished; awaiting finish of 2 more threads
+Tue, 05 Dec 2017 14:30:41 word2vec.py[line:1130] INFO worker thread finished; awaiting finish of 1 more threads
+Tue, 05 Dec 2017 14:30:41 word2vec.py[line:1130] INFO worker thread finished; awaiting finish of 0 more threads
+Tue, 05 Dec 2017 14:30:41 word2vec.py[line:1163] INFO training on 176995 raw words (91561 effective words) took 37.6s, 2438 effective words/s
+Tue, 05 Dec 2017 14:30:41 word2vec.py[line:1166] WARNING under 10 jobs per worker: consider setting a smaller `batch_words' for smoother alpha decay
+Tue, 05 Dec 2017 14:30:41 utils.py[line:368] INFO saving Word2Vec object under ../res/kd_300_sg/model/kd_300_sg, separately None
+Tue, 05 Dec 2017 14:30:41 utils.py[line:454] INFO not storing attribute syn0norm
+Tue, 05 Dec 2017 14:30:41 utils.py[line:454] INFO not storing attribute cum_table
+Tue, 05 Dec 2017 14:30:41 utils.py[line:381] INFO saved ../res/kd_300_sg/model/kd_300_sg
+Tue, 05 Dec 2017 14:30:41 word2vec.py[line:905] INFO build KD tree
+Tue, 05 Dec 2017 14:30:41 word2vec.py[line:631] INFO constructing a kd-tree from 1150 words
+Tue, 05 Dec 2017 14:30:41 word2vec.py[line:646] INFO the number of inner_node is 1149
+Tue, 05 Dec 2017 14:30:41 word2vec.py[line:647] INFO built kd tree with maximum node depth 11
+Tue, 05 Dec 2017 14:30:41 word2vec.py[line:1313] INFO updating layer weights
+Tue, 05 Dec 2017 14:30:41 word2vec.py[line:999] INFO training model with 3 workers on 1150 vocabulary and 300 features, using sg=1 hs=1 sample=0.001 negative=0 window=5
+Tue, 05 Dec 2017 14:30:48 word2vec.py[line:1148] INFO PROGRESS: at 4.60% examples, 725 words/s, in_qsize 6, out_qsize 0
+Tue, 05 Dec 2017 14:30:54 word2vec.py[line:1148] INFO PROGRESS: at 21.81% examples, 1570 words/s, in_qsize 5, out_qsize 0
+Tue, 05 Dec 2017 14:31:00 word2vec.py[line:1148] INFO PROGRESS: at 39.51% examples, 1894 words/s, in_qsize 5, out_qsize 0
+Tue, 05 Dec 2017 14:31:01 word2vec.py[line:1148] INFO PROGRESS: at 44.14% examples, 2047 words/s, in_qsize 6, out_qsize 0
+Tue, 05 Dec 2017 14:31:06 word2vec.py[line:1148] INFO PROGRESS: at 56.66% examples, 2073 words/s, in_qsize 5, out_qsize 0
+Tue, 05 Dec 2017 14:31:07 word2vec.py[line:1148] INFO PROGRESS: at 61.60% examples, 2162 words/s, in_qsize 5, out_qsize 0
+Tue, 05 Dec 2017 14:31:12 word2vec.py[line:1148] INFO PROGRESS: at 69.88% examples, 2170 words/s, in_qsize 5, out_qsize 0
+Tue, 05 Dec 2017 14:31:13 word2vec.py[line:1148] INFO PROGRESS: at 79.11% examples, 2232 words/s, in_qsize 4, out_qsize 0
+Tue, 05 Dec 2017 14:31:15 word2vec.py[line:1148] INFO PROGRESS: at 83.65% examples, 2317 words/s, in_qsize 3, out_qsize 0
+Tue, 05 Dec 2017 14:31:18 word2vec.py[line:1148] INFO PROGRESS: at 87.15% examples, 2240 words/s, in_qsize 2, out_qsize 1
+Tue, 05 Dec 2017 14:31:18 word2vec.py[line:1130] INFO worker thread finished; awaiting finish of 2 more threads
+Tue, 05 Dec 2017 14:31:19 word2vec.py[line:1130] INFO worker thread finished; awaiting finish of 1 more threads
+Tue, 05 Dec 2017 14:31:19 word2vec.py[line:1130] INFO worker thread finished; awaiting finish of 0 more threads
+Tue, 05 Dec 2017 14:31:19 word2vec.py[line:1163] INFO training on 176995 raw words (91728 effective words) took 37.7s, 2431 effective words/s
+Tue, 05 Dec 2017 14:31:19 word2vec.py[line:1166] WARNING under 10 jobs per worker: consider setting a smaller `batch_words' for smoother alpha decay
+Tue, 05 Dec 2017 14:31:19 utils.py[line:368] INFO saving Word2Vec object under ../res/pca_300_sg/model/pca_300_sg, separately None
+Tue, 05 Dec 2017 14:31:19 utils.py[line:454] INFO not storing attribute syn0norm
+Tue, 05 Dec 2017 14:31:19 utils.py[line:454] INFO not storing attribute cum_table
+Tue, 05 Dec 2017 14:31:19 utils.py[line:381] INFO saved ../res/pca_300_sg/model/pca_300_sg
+Tue, 05 Dec 2017 14:31:19 word2vec.py[line:511] WARNING Slow version of word2vec is being used
+Tue, 05 Dec 2017 14:31:19 word2vec.py[line:732] INFO collecting all words and their counts
+Tue, 05 Dec 2017 14:31:19 word2vec.py[line:750] INFO PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+Tue, 05 Dec 2017 14:31:19 word2vec.py[line:762] INFO collected 6087 word types from a corpus of 35399 raw words and 652 sentences
+Tue, 05 Dec 2017 14:31:19 word2vec.py[line:787] INFO Loading a fresh vocabulary
+Tue, 05 Dec 2017 14:31:19 word2vec.py[line:811] INFO min_count=5 retains 1150 unique words (18% of original 6087, drops 4937)
+Tue, 05 Dec 2017 14:31:19 word2vec.py[line:817] INFO min_count=5 leaves 27564 word corpus (77% of original 35399, drops 7835)
+Tue, 05 Dec 2017 14:31:19 word2vec.py[line:876] INFO deleting the raw counts dictionary of 6087 items
+Tue, 05 Dec 2017 14:31:19 word2vec.py[line:879] INFO sample=0.001 downsamples 43 most-common words
+Tue, 05 Dec 2017 14:31:19 word2vec.py[line:882] INFO downsampling leaves estimated 18344 word corpus (66.6% of prior 27564)
+Tue, 05 Dec 2017 14:31:19 word2vec.py[line:1531] INFO estimated required memory for 1150 words and 300 dimensions: 3335000 bytes
+Tue, 05 Dec 2017 14:31:19 word2vec.py[line:1342] INFO resetting layer weights
+Tue, 05 Dec 2017 14:31:19 word2vec.py[line:999] INFO training model with 3 workers on 1150 vocabulary and 300 features, using sg=1 hs=0 sample=0.001 negative=5 window=5
+Tue, 05 Dec 2017 14:31:30 word2vec.py[line:1148] INFO PROGRESS: at 9.08% examples, 506 words/s, in_qsize 6, out_qsize 0
+Tue, 05 Dec 2017 14:31:31 word2vec.py[line:1148] INFO PROGRESS: at 17.27% examples, 1326 words/s, in_qsize 5, out_qsize 0
+Tue, 05 Dec 2017 14:31:40 word2vec.py[line:1148] INFO PROGRESS: at 21.96% examples, 997 words/s, in_qsize 5, out_qsize 0
+Tue, 05 Dec 2017 14:31:41 word2vec.py[line:1148] INFO PROGRESS: at 26.50% examples, 1170 words/s, in_qsize 5, out_qsize 0
+Tue, 05 Dec 2017 14:31:50 word2vec.py[line:1148] INFO PROGRESS: at 39.51% examples, 1167 words/s, in_qsize 6, out_qsize 0
+Tue, 05 Dec 2017 14:31:51 word2vec.py[line:1148] INFO PROGRESS: at 44.14% examples, 1278 words/s, in_qsize 5, out_qsize 0
+Tue, 05 Dec 2017 14:31:53 word2vec.py[line:1148] INFO PROGRESS: at 47.48% examples, 1380 words/s, in_qsize 6, out_qsize 0
+Tue, 05 Dec 2017 14:32:00 word2vec.py[line:1148] INFO PROGRESS: at 56.66% examples, 1275 words/s, in_qsize 6, out_qsize 0
+Tue, 05 Dec 2017 14:32:02 word2vec.py[line:1148] INFO PROGRESS: at 61.60% examples, 1316 words/s, in_qsize 6, out_qsize 0
+Tue, 05 Dec 2017 14:32:04 word2vec.py[line:1148] INFO PROGRESS: at 65.83% examples, 1390 words/s, in_qsize 5, out_qsize 0
+Tue, 05 Dec 2017 14:32:08 word2vec.py[line:1148] INFO PROGRESS: at 69.88% examples, 1356 words/s, in_qsize 5, out_qsize 0
+Tue, 05 Dec 2017 14:32:13 word2vec.py[line:1148] INFO PROGRESS: at 79.11% examples, 1344 words/s, in_qsize 4, out_qsize 0
+Tue, 05 Dec 2017 14:32:14 word2vec.py[line:1148] INFO PROGRESS: at 83.65% examples, 1400 words/s, in_qsize 3, out_qsize 0
+Tue, 05 Dec 2017 14:32:18 word2vec.py[line:1148] INFO PROGRESS: at 87.15% examples, 1411 words/s, in_qsize 2, out_qsize 1
+Tue, 05 Dec 2017 14:32:18 word2vec.py[line:1130] INFO worker thread finished; awaiting finish of 2 more threads
+Tue, 05 Dec 2017 14:32:21 word2vec.py[line:1148] INFO PROGRESS: at 91.26% examples, 1411 words/s, in_qsize 1, out_qsize 1
+Tue, 05 Dec 2017 14:32:21 word2vec.py[line:1130] INFO worker thread finished; awaiting finish of 1 more threads
+Tue, 05 Dec 2017 14:32:21 word2vec.py[line:1130] INFO worker thread finished; awaiting finish of 0 more threads
+Tue, 05 Dec 2017 14:32:21 word2vec.py[line:1163] INFO training on 176995 raw words (91718 effective words) took 61.4s, 1493 effective words/s
+Tue, 05 Dec 2017 14:32:21 word2vec.py[line:1166] WARNING under 10 jobs per worker: consider setting a smaller `batch_words' for smoother alpha decay
+Tue, 05 Dec 2017 14:32:21 utils.py[line:368] INFO saving Word2Vec object under ../res/neg5_300_sg/model/neg5_300_sg, separately None
+Tue, 05 Dec 2017 14:32:21 utils.py[line:454] INFO not storing attribute syn0norm
+Tue, 05 Dec 2017 14:32:21 utils.py[line:454] INFO not storing attribute cum_table
+Tue, 05 Dec 2017 14:32:21 utils.py[line:381] INFO saved ../res/neg5_300_sg/model/neg5_300_sg
