@@ -1,0 +1,18 @@
+// Copyright 2013 Google Inc. All Rights Reserved.
+: semantic
+: capital-common-countries
+Athens Greece Baghdad Iraq
+Athens Greece Bangkok Thailand
+uncle aunt prince princess
+uncle aunt son daughter
+uncle aunt sons daughters
+uncle aunt stepbrother stepsister
+uncle aunt stepfather stepmother
+uncle aunt stepson stepdaughter
+: syntactic
+: gram1-adjective-to-adverb
+amazing amazingly apparent apparently
+amazing amazingly calm calmly
+amazing amazingly cheerful cheerfully
+amazing amazingly complete completely
+amazing amazingly efficient efficiently
