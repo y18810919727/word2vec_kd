@@ -63,10 +63,9 @@ def evaluate_model(model,data):
     cur_sum = 0
     for id,x in enumerate(data):
         #print(id)
-        if x[0]==':':
+        if x[0]==':' and x[1] == :
+
             if cur_sum !=0 :
-                logging.info("In this group.Sum\t%i Right\t%i Accuracy\t%f",cur_sum,cur_right,(cur_right)/(cur_sum))
-            logging.info("Group Name:\t%s",x[1])
             cur_right = 0
             cur_sum = 0
             continue
@@ -79,7 +78,6 @@ def evaluate_model(model,data):
     logging.info("In this group.Sum\t%i Right\t%i Accuracy\t%f",cur_sum,cur_right,(cur_right)/(cur_sum))
     logging.info("Number is %i cnt. The right count is %i.The whole accuracy is %f.",cnt,right_item,(right_item)/(cnt))
     return right_item/cnt
-
 if __name__ == '__main__':
     #model =  word2vec.Word2Vec.load('../res/huff_beg')
     data = Data('../toolkit/word-test.v1.txt')

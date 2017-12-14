@@ -90,7 +90,7 @@ def evaluate_models(dir_name,output_name):
     #sys.stdout = outputfile
 
     #data = Data('../toolkit/word-test.v1.txt')
-    data = Data('../toolkit/word-test.v2.txt')
+    data = Data('./toolkit/word-test.v2.txt')
     for dir in os.listdir(dir_name):
         print('modelname :',dir)
         information_file = open(dir_name+'/'+dir+'/information','r')
