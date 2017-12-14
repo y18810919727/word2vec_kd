@@ -59,7 +59,7 @@ class Myexp :
         if not os.path.exists(dir):
             os.mkdir(dir)
     def train_model(self, hs=0, negative=5, sg=0, size=100, pca=True,
-                    kd_tree=True,model_name='default', origin_model=None, save_dir='../res/'):
+                    kd_tree=True,model_name='default', origin_model=None, save_dir='../res/',spe = False):
         print("Training ",model_name)
         save_dir = save_dir + model_name
         self.make_dir(save_dir)
@@ -76,6 +76,12 @@ class Myexp :
         '''
         information_dic = {'hs': hs,'negative': negative, 'sg': sg, 'size': size, 'pca': pca, 'kd_tree': kd_tree,
                            'model_name': model_name}
+        if spe:
+            new_model = word2vec.Word2Vec(sentences=self.sentences, hs=hs, negative=negative, sg=sg, size=size,iter=10)
+            information_dic['train_time'] = time.clock()-start_time
+            self.write_model_information(save_dir+'/'+'information',infor_dic=information_dic)
+            new_model.save(save_dir+'/model/'+model_name)
+            return new_model
         if kd_tree:
             origin_model.negative = 0
             origin_model.hs = 1
@@ -94,6 +100,10 @@ class Myexp :
             return new_model
 
     def run_exp(self):
+
+        self.train_model(hs=1,negative=0,sg=0,size=100,pca=False,kd_tree=False,model_name='huf_100_cbow_10iter',save_dir=self.res_dir,spe=True)
+        self.train_model(hs=1,negative=0,sg=0,size=300,pca=False,kd_tree=False,model_name='huf_300_cbow_10iter',save_dir=self.res_dir,spe=True)
+        '''
         model1 = self.train_model(hs=1,negative=0,sg=0,size=100,pca=False,kd_tree=False,model_name='huf_100_cbow',save_dir=self.res_dir)
         self.train_model(hs=1,negative=0,sg=0,size=100,pca=False,kd_tree=True,model_name='kd_100_cbow',origin_model=copy.deepcopy(model1),save_dir=self.res_dir)
         self.train_model(hs=1,negative=0,sg=0,size=100,pca=True,kd_tree=True,model_name='pca_100_cbow',origin_model=model1,save_dir=self.res_dir)
@@ -107,6 +117,7 @@ class Myexp :
         self.train_model(hs=1,negative=0,sg=1,size=300,pca=False,kd_tree=True,model_name='kd_300_sg',origin_model=copy.deepcopy(model1),save_dir=self.res_dir)
         self.train_model(hs=1,negative=0,sg=1,size=300,pca=True,kd_tree=True,model_name='pca_300_sg',origin_model=model1,save_dir=self.res_dir)
         self.train_model(hs=0,negative=5,sg=1,size=300,pca=False,kd_tree=False,model_name='neg5_300_sg',save_dir=self.res_dir)
+        '''
 
 
 
