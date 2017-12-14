@@ -25,7 +25,7 @@ logging.basicConfig(level=logging.INFO,
                     filemode='w'
                     )
 if __name__ == '__main__':
-    exp = Myexp("../data_test",'../res/')
+    exp = Myexp("../data",'../res/')
     exp.run_exp()
 
     #gen = gensim.models.Word2Vec()

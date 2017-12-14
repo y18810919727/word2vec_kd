@@ -1,0 +1,9 @@
+modelname : kd_300_sg
+hs	1
+negative	0
+sg	1
+size	300
+pca	False
+kd_tree	True
+model_name	kd_300_sg
+train_time	57682.20093499997

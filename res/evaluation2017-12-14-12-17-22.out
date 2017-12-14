@@ -1,0 +1,182 @@
+modelname : kd_300_sg
+hs	1
+negative	0
+sg	1
+size	300
+pca	False
+kd_tree	True
+model_name	kd_300_sg
+train_time	57682.20093499997
+semantic : 0.6395309505017477
+syntactic : 0.5827634660421546
+Total : 0.6085243553008596
+
+
+modelname : neg5_300_sg
+hs	0
+negative	5
+sg	1
+size	300
+pca	False
+kd_tree	False
+model_name	neg5_300_sg
+train_time	46395.65039899998
+semantic : 0.7065058067425866
+syntactic : 0.6492740046838408
+Total : 0.6752455996725337
+
+
+modelname : kd_100_sg
+hs	1
+negative	0
+sg	1
+size	100
+pca	False
+kd_tree	True
+model_name	kd_100_sg
+train_time	41928.992654
+semantic : 0.508512797384147
+syntactic : 0.4889929742388759
+Total : 0.4978510028653295
+
+
+modelname : huf_300_sg
+hs	1
+negative	0
+sg	1
+size	300
+pca	False
+kd_tree	False
+model_name	huf_300_sg
+train_time	47696.83297300001
+semantic : 0.6139361822076898
+syntactic : 0.5555971896955504
+Total : 0.5820712239050347
+
+
+modelname : huf_100_cbow
+hs	1
+negative	0
+sg	0
+size	100
+pca	False
+kd_tree	False
+model_name	huf_100_cbow
+train_time	26050.721203
+semantic : 0.27849813958732667
+syntactic : 0.4415925058548009
+Total : 0.36758084322554235
+
+
+modelname : huf_300_cbow
+hs	1
+negative	0
+sg	0
+size	300
+pca	False
+kd_tree	False
+model_name	huf_300_cbow
+train_time	29318.443052999995
+semantic : 0.36745969105874393
+syntactic : 0.5445433255269321
+Total : 0.46418338108882523
+
+
+modelname : pca_300_sg
+hs	1
+negative	0
+sg	1
+size	300
+pca	True
+kd_tree	True
+model_name	pca_300_sg
+train_time	53057.546724000014
+semantic : 0.6536249859059646
+syntactic : 0.5773302107728338
+Total : 0.6119525173966435
+
+
+modelname : pca_100_cbow
+hs	1
+negative	0
+sg	0
+size	100
+pca	True
+kd_tree	True
+model_name	pca_100_cbow
+train_time	24494.931123999995
+semantic : 0.3292366670425076
+syntactic : 0.453864168618267
+Total : 0.39730863692181745
+
+
+modelname : pca_100_sg
+hs	1
+negative	0
+sg	1
+size	100
+pca	True
+kd_tree	True
+model_name	pca_100_sg
+train_time	40635.95904300001
+semantic : 0.5097530724997181
+syntactic : 0.4910538641686183
+Total : 0.49953950061399915
+
+
+modelname : kd_100_cbow
+hs	1
+negative	0
+sg	0
+size	100
+pca	False
+kd_tree	True
+model_name	kd_100_cbow
+train_time	25886.470841000002
+semantic : 0.306460705829293
+syntactic : 0.45311475409836066
+Total : 0.386563651248465
+
+
+modelname : huf_100_sg
+hs	1
+negative	0
+sg	1
+size	100
+pca	False
+kd_tree	False
+model_name	huf_100_sg
+train_time	38168.87384300001
+semantic : 0.4391701431953997
+syntactic : 0.4550819672131148
+Total : 0.44786123618501844
+
+
+modelname : kd_300_cbow
+hs	1
+negative	0
+sg	0
+size	300
+pca	False
+kd_tree	True
+model_name	kd_300_cbow
+train_time	32483.71086999998
+semantic : 0.39327996391926934
+syntactic : 0.5614988290398126
+Total : 0.4851616864510847
+
+
+modelname : pca_300_cbow
+hs	1
+negative	0
+sg	0
+size	300
+pca	True
+kd_tree	True
+model_name	pca_300_cbow
+train_time	28036.809597000014
+semantic : 0.4048934490923441
+syntactic : 0.5456674473067916
+Total : 0.4817846909537454
+
+

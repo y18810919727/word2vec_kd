@@ -61,7 +61,6 @@ def run(model,data):
     cur_sum = 0
     res = []
     for id,x in enumerate(data):
-        print(id)
         if x[0]==':':
             if len(x)<=1:
                 continue
@@ -86,21 +85,19 @@ def evaluate_models(dir_name,output_name):
 
 
     output = sys.stdout
-    #outputfile =open(output_name,'w')
-    #sys.stdout = outputfile
+    outputfile =open(output_name,'w')
+    sys.stdout = outputfile
 
-    #data = Data('../toolkit/word-test.v1.txt')
-    data = Data('./toolkit/word-test.v2.txt')
+    data = Data('./toolkit/word-test.v1.txt')
+    #data = Data('./toolkit/word-test.v2.txt')
     for dir in os.listdir(dir_name):
         print('modelname :',dir)
         information_file = open(dir_name+'/'+dir+'/information','r')
         for x in information_file.readlines():
             print(x,end='')
         information_file.close()
-        print('load Model')
         model_name = dir_name+'/'+dir+'/model/' + dir
         model = word2vec.Word2Vec.load(model_name)
-        print('Run Model')
         result = run(model,data)
         print('semantic : '+str(result[0]))
         print('syntactic : '+str(result[1]))
@@ -108,7 +105,8 @@ def evaluate_models(dir_name,output_name):
         print('\n')
         del model
 
-    #sys.stdout = output
+    sys.stdout = output
+    outputfile.close()
 
 if __name__ == '__main__':
     evaluate_models('../models','./res/evaluation'+time.strftime('%Y-%m-%d-%H-%M-%S',time.localtime(time.time()))+'.out');
