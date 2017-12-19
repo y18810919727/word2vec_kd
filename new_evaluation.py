@@ -109,5 +109,5 @@ def evaluate_models(dir_name,output_name):
     outputfile.close()
 
 if __name__ == '__main__':
-    evaluate_models('../models','./res/evaluation'+time.strftime('%Y-%m-%d-%H-%M-%S',time.localtime(time.time()))+'.out');
+    evaluate_models('../res','./res/evaluation'+time.strftime('%Y-%m-%d-%H-%M-%S',time.localtime(time.time()))+'.out');
 

@@ -1,0 +1,28 @@
+modelname : huf_100_cbow_10iter
+hs	1
+negative	0
+sg	0
+size	100
+pca	False
+kd_tree	False
+model_name	huf_100_cbow_10iter
+train_time	49500.71649
+semantic : 0.28424850603224716
+syntactic : 0.44074941451990635
+Total : 0.36972984036021284
+
+
+modelname : huf_300_cbow_10iter
+hs	1
+negative	0
+sg	0
+size	300
+pca	False
+kd_tree	False
+model_name	huf_300_cbow_10iter
+train_time	56121.694693
+semantic : 0.38651482692524525
+syntactic : 0.5465105386416862
+Total : 0.47390503479328694
+
+
