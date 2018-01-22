@@ -123,12 +123,14 @@ class Myexp :
         '''
         model1 = self.train_model(hs=1,negative=0,sg=0,size=100,pca=False,kd_tree=False,model_name='huf_100_cbow',save_dir=self.res_dir)
         self.train_model(hs=1,negative=0,sg=0,size=100,pca=True,kd_tree=False,model_name='pca_tree_100_cbow',origin_model=model1,save_dir=self.res_dir)
+        '''
         model1 = self.train_model(hs=1,negative=0,sg=1,size=100,pca=False,kd_tree=False,model_name='huf_100_sg',save_dir=self.res_dir)
         self.train_model(hs=1,negative=0,sg=1,size=100,pca=True,kd_tree=False,model_name='pca_tree_100_sg',origin_model=model1,save_dir=self.res_dir)
         model1 = self.train_model(hs=1,negative=0,sg=0,size=300,pca=False,kd_tree=False,model_name='huf_300_cbow',save_dir=self.res_dir)
         self.train_model(hs=1,negative=0,sg=0,size=300,pca=True,kd_tree=False,model_name='pca_tree_300_cbow',origin_model=model1,save_dir=self.res_dir)
         model1 = self.train_model(hs=1,negative=0,sg=1,size=300,pca=False,kd_tree=False,model_name='huf_300_sg',save_dir=self.res_dir)
         self.train_model(hs=1,negative=0,sg=1,size=300,pca=True,kd_tree=False,model_name='pca_tree_300_sg',origin_model=model1,save_dir=self.res_dir)
+        '''
 
 
 

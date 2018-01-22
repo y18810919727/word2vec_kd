@@ -1,0 +1,30 @@
+modelname : pca_tree_100_cbow
+model_name	pca_tree_100_cbow
+hs	1
+aver_dep	10.474695687730003
+size	100
+negative	0
+kd_tree	False
+train_time	22.977762000000002
+sg	0
+pca	True
+semantic : 0.0
+syntactic : 0.0
+Total : 0.0
+
+
+modelname : huf_100_cbow
+model_name	huf_100_cbow
+hs	1
+aver_dep	8.157896392287611
+size	100
+negative	0
+kd_tree	False
+train_time	21.111876
+sg	0
+pca	False
+semantic : 0.0
+syntactic : 0.0
+Total : 0.0
+
+
