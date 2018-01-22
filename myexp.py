@@ -79,31 +79,34 @@ class Myexp :
         if spe:
             new_model = word2vec.Word2Vec(sentences=self.sentences, hs=hs, negative=negative, sg=sg, size=size,iter=10)
             information_dic['train_time'] = time.clock()-start_time
+            information_dic['aver_dep'] = new_model.cal_ave_deep()
             self.write_model_information(save_dir+'/'+'information',infor_dic=information_dic)
             new_model.save(save_dir+'/model/'+model_name)
             return new_model
-        if kd_tree:
+        if kd_tree or pca:
             origin_model.negative = 0
             origin_model.hs = 1
             origin_model.finalize_vocab(update=True,kd_tree=kd_tree,pca=pca)
             origin_model.train(self.sentences, total_examples=origin_model.corpus_count,
                                epochs=origin_model.iter, start_alpha=origin_model.alpha, end_alpha=origin_model.min_alpha)
             information_dic['train_time'] = time.clock()-start_time
+            information_dic['aver_dep'] = origin_model.cal_ave_deep()
             self.write_model_information(save_dir+'/'+'information', infor_dic=information_dic)
             origin_model.save(save_dir+'/model/'+model_name)
             return origin_model
         else:
             new_model = word2vec.Word2Vec(sentences=self.sentences, hs=hs, negative=negative, sg=sg, size=size)
             information_dic['train_time'] = time.clock()-start_time
+            information_dic['aver_dep'] = new_model.cal_ave_deep()
             self.write_model_information(save_dir+'/'+'information',infor_dic=information_dic)
             new_model.save(save_dir+'/model/'+model_name)
             return new_model
 
     def run_exp(self):
 
+        '''
         self.train_model(hs=1,negative=0,sg=0,size=100,pca=False,kd_tree=False,model_name='huf_100_cbow_10iter',save_dir=self.res_dir,spe=True)
         self.train_model(hs=1,negative=0,sg=0,size=300,pca=False,kd_tree=False,model_name='huf_300_cbow_10iter',save_dir=self.res_dir,spe=True)
-        '''
         model1 = self.train_model(hs=1,negative=0,sg=0,size=100,pca=False,kd_tree=False,model_name='huf_100_cbow',save_dir=self.res_dir)
         self.train_model(hs=1,negative=0,sg=0,size=100,pca=False,kd_tree=True,model_name='kd_100_cbow',origin_model=copy.deepcopy(model1),save_dir=self.res_dir)
         self.train_model(hs=1,negative=0,sg=0,size=100,pca=True,kd_tree=True,model_name='pca_100_cbow',origin_model=model1,save_dir=self.res_dir)
@@ -118,6 +121,14 @@ class Myexp :
         self.train_model(hs=1,negative=0,sg=1,size=300,pca=True,kd_tree=True,model_name='pca_300_sg',origin_model=model1,save_dir=self.res_dir)
         self.train_model(hs=0,negative=5,sg=1,size=300,pca=False,kd_tree=False,model_name='neg5_300_sg',save_dir=self.res_dir)
         '''
+        model1 = self.train_model(hs=1,negative=0,sg=0,size=100,pca=False,kd_tree=False,model_name='huf_100_cbow',save_dir=self.res_dir)
+        self.train_model(hs=1,negative=0,sg=0,size=100,pca=True,kd_tree=False,model_name='pca_tree_100_cbow',origin_model=model1,save_dir=self.res_dir)
+        model1 = self.train_model(hs=1,negative=0,sg=1,size=100,pca=False,kd_tree=False,model_name='huf_100_sg',save_dir=self.res_dir)
+        self.train_model(hs=1,negative=0,sg=1,size=100,pca=True,kd_tree=False,model_name='pca_tree_100_sg',origin_model=model1,save_dir=self.res_dir)
+        model1 = self.train_model(hs=1,negative=0,sg=0,size=300,pca=False,kd_tree=False,model_name='huf_300_cbow',save_dir=self.res_dir)
+        self.train_model(hs=1,negative=0,sg=0,size=300,pca=True,kd_tree=False,model_name='pca_tree_300_cbow',origin_model=model1,save_dir=self.res_dir)
+        model1 = self.train_model(hs=1,negative=0,sg=1,size=300,pca=False,kd_tree=False,model_name='huf_300_sg',save_dir=self.res_dir)
+        self.train_model(hs=1,negative=0,sg=1,size=300,pca=True,kd_tree=False,model_name='pca_tree_300_sg',origin_model=model1,save_dir=self.res_dir)
 
 
 

@@ -586,6 +586,32 @@ class Word2Vec(utils.SaveLoad):
         if len(self.cum_table) > 0:
             assert self.cum_table[-1] == domain
 
+    def create_pca_tree_node(self,data_list,codes,points,inner_id):
+        if len(data_list) == 1:
+            node = data_list[0]
+            '''
+            logger.info("It's leaf. ID is %i",node.index)
+            logger.info(codes)
+            logger.info(points)
+            '''
+            self.wv.vocab[self.wv.index2word[node.index]].code=codes
+            self.wv.vocab[self.wv.index2word[node.index]].point=points
+            return (0,0)
+        origin_data = [w.vec for w in data_list]
+        pca = PCA(n_components=1)
+        new_data = pca.fit_transform(origin_data)
+        for id,w in enumerate(data_list):
+            w.sort_key = new_data[id]
+        data_list = sorted(data_list,key= lambda x:x.sort_key)
+        new_points = array(list(points) + [inner_id], dtype=uint32)
+        inner_id += 1
+        (left_inner_num, left_dep) = self.create_pca_tree_node(data_list[0:len(data_list)//2],array(list(codes)+[0],dtype=uint8),new_points,inner_id)
+        inner_id += left_inner_num
+        (right_inner_num, right_dep) = self.create_pca_tree_node(data_list[len(data_list)//2:],array(list(codes)+[1],dtype=uint8),new_points,inner_id)
+        return (left_inner_num+right_inner_num+1, max(left_dep,right_dep)+1)
+
+
+
     def create_kd_tree_node(self,data_list,codes,points,inner_id):
         if len(data_list) == 1:
             node = data_list[0]
@@ -627,6 +653,17 @@ class Word2Vec(utils.SaveLoad):
             deep+=1
             t*=2
         return deep
+
+    def cal_ave_deep(self):
+        cnt = 0
+        sum_dep = 0
+        sum_cnt = 0
+        for x in itervalues(self.wv.vocab):
+            sum_dep += len(x.code)*x.count
+            sum_cnt += x.count
+
+        return float(sum_dep)/sum_cnt
+
     def create_binary_kd_tree(self):
         logger.info("constructing a kd-tree from %i words",len(self.wv.vocab))
         datalist = list(itervalues(self.wv.vocab))
@@ -641,10 +678,20 @@ class Word2Vec(utils.SaveLoad):
             newData = pca.fit_transform(ori_data)
             for id,w in enumerate(datalist):
                 w.vec = newData[id]
-        print('The dimension is %i'%(len(datalist[0].vec)))
         (sum_node,max_dep) = self.create_kd_tree_node(datalist,[],[],0)
         logger.info("the number of inner_node is %i",sum_node)
         logger.info("built kd tree with maximum node depth %i", max_dep)
+
+    def create_binary_pca_tree(self):
+        logger.info("constructing a pca-tree from %i words",len(self.wv.vocab))
+        datalist = list(itervalues(self.wv.vocab))
+        for w in datalist:
+            w.vec = self.wv[self.wv.index2word[w.index]]
+        self.new_dimension = self.vector_size
+        (sum_node,max_dep) = self.create_pca_tree_node(datalist,[],[],0)
+        logger.info("the number of inner_node is %i",sum_node)
+        logger.info("built pca tree with maximum node depth %i", max_dep)
+        logger.info("built pca tree with average node depth %i", self.cal_ave_deep())
 
     def create_binary_tree(self):
         """
@@ -901,7 +948,10 @@ class Word2Vec(utils.SaveLoad):
         if self.hs:
             # add info about each word's Huffman encoding
             #self.create_binary_tree()
-            if self.kd_tree:
+            if not self.kd_tree and self.pca:
+                logger.info("build PCA tree")
+                self.create_binary_pca_tree()
+            elif self.kd_tree:
                 logger.info("build KD tree")
                 self.create_binary_kd_tree()
             else:

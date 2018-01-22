@@ -72,9 +72,13 @@ def run(model,data):
                 cur_right = 0
                 cur_sum = 0
             continue
-        elif model.wv.most_similar(positive=[x[1], x[2]], negative=[x[0]],topn=1)[0][0] == x[3]:
-            cur_right +=1
-            right_item += 1
+        else:
+            try:
+                if model.wv.most_similar(positive=[x[1], x[2]], negative=[x[0]],topn=1)[0][0] == x[3]:
+                    cur_right +=1
+                    right_item += 1
+            except KeyError as e:
+                logging.info(e)
         cur_sum +=1
         cnt += 1
     res.append(1.0*cur_right/cur_sum)
