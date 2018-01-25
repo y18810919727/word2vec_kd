@@ -26,8 +26,8 @@ logging.basicConfig(level=logging.INFO,
                     filemode='w'
                     )
 if __name__ == '__main__':
-    exp = Myexp("../data",'../res/')
-    exp.run_exp()
+    #exp = Myexp("../data",'../res/')
+    #exp.run_exp()
     ev.evaluate_models('../res', './res/evaluation'+time.strftime('%Y-%m-%d-%H-%M-%S',time.localtime(time.time()))+'.out');
 
 
