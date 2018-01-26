@@ -1,0 +1,120 @@
+modelname : huf_300_sg
+hs	1
+negative	0
+sg	1
+size	300
+pca	False
+kd_tree	False
+model_name	huf_300_sg
+train_time	40471.790656
+aver_dep	10.940415920559326
+semantic : 0.6135979253579885
+syntactic : 0.5462295081967213
+Total : 0.5768010642652477
+
+
+modelname : huf_100_cbow
+hs	1
+negative	0
+sg	0
+size	100
+pca	False
+kd_tree	False
+model_name	huf_100_cbow
+train_time	23903.282609
+aver_dep	10.940415920559326
+semantic : 0.2582027286052543
+syntactic : 0.45423887587822015
+Total : 0.3652783462955383
+
+
+modelname : pca_tree_300_cbow
+hs	1
+negative	0
+sg	0
+size	300
+pca	True
+kd_tree	False
+model_name	pca_tree_300_cbow
+train_time	27080.313210000022
+aver_dep	18.883263525996384
+semantic : 0.4299244559702334
+syntactic : 0.5873536299765808
+Total : 0.5159128121162505
+
+
+modelname : pca_tree_100_sg
+hs	1
+negative	0
+sg	1
+size	100
+pca	True
+kd_tree	False
+model_name	pca_tree_100_sg
+train_time	35969.217624
+aver_dep	18.869771822010016
+semantic : 0.6404329687676176
+syntactic : 0.5207494145199063
+Total : 0.5750613999181334
+
+
+modelname : huf_300_cbow
+hs	1
+negative	0
+sg	0
+size	300
+pca	False
+kd_tree	False
+model_name	huf_300_cbow
+train_time	26547.781741000013
+aver_dep	10.940415920559326
+semantic : 0.3895591385725561
+syntactic : 0.5423887587822014
+Total : 0.47303520261972987
+
+
+modelname : pca_tree_300_sg
+hs	1
+negative	0
+sg	1
+size	300
+pca	True
+kd_tree	False
+model_name	pca_tree_300_sg
+train_time	46204.92812700002
+aver_dep	18.83697719819961
+semantic : 0.6971473672341865
+syntactic : 0.6
+Total : 0.6440851412198118
+
+
+modelname : huf_100_sg
+hs	1
+negative	0
+sg	1
+size	100
+pca	False
+kd_tree	False
+model_name	huf_100_sg
+train_time	33175.424229000004
+aver_dep	10.940415920559326
+semantic : 0.4410869320103732
+syntactic : 0.4606088992974239
+Total : 0.4517498976668031
+
+
+modelname : pca_tree_100_cbow
+hs	1
+negative	0
+sg	0
+size	100
+pca	True
+kd_tree	False
+model_name	pca_tree_100_cbow
+train_time	23693.403723
+aver_dep	18.929814293536445
+semantic : 0.45021986695230576
+syntactic : 0.5168149882903982
+Total : 0.48659435120753175
+
+

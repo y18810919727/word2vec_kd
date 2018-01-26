@@ -16,7 +16,6 @@ import os
 import re
 import sys
 import time
-import BASE_ROOT as ROOT
 import new_evaluation as ev
 from myexp import  Myexp
 log_path = './log/'+time.strftime('%Y-%m-%d-%H-%M',time.localtime(time.time()))+'.log'
@@ -27,12 +26,9 @@ logging.basicConfig(level=logging.INFO,
                     filemode='w'
                     )
 if __name__ == '__main__':
-    Data_path = os.path.join(ROOT.BASE_ROOT_DIR,"data")
-    Res_path = os.path.join(ROOT.BASE_ROOT_DIR,"res/")
-    ev_path = os.path.join(ROOT.BASE_ROOT_DIR, 'code/res/evaluation'+time.strftime('%Y-%m-%d-%H-%M-%S',time.localtime(time.time()))+'.out')
-    exp = Myexp(Data_path,Res_path)
+    exp = Myexp("../data",'../res/')
     exp.run_exp()
-    ev.evaluate_models(Res_path, ev_path);
+    ev.evaluate_models('../res', './res/evaluation'+time.strftime('%Y-%m-%d-%H-%M-%S',time.localtime(time.time()))+'.out');
 
 
     #gen = gensim.models.Word2Vec()
