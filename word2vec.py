@@ -106,9 +106,11 @@ import heapq
 from timeit import default_timer
 from copy import deepcopy
 from collections import defaultdict
+from sklearn.mixture import GaussianMixture as GMM
 import threading
 import itertools
 import warnings
+import matplotlib.pyplot as plt
 
 from gensim.utils import keep_vocab_item, call_on_class_only
 from gensim.models.keyedvectors import KeyedVectors, Vocab
@@ -611,6 +613,44 @@ class Word2Vec(utils.SaveLoad):
         return (left_inner_num+right_inner_num+1, max(left_dep,right_dep)+1)
 
 
+    def create_gauss_tree_node(self,data_list,codes,points,inner_id):
+        if len(data_list) == 1:
+            node = data_list[0]
+            '''
+            logger.info("It's leaf. ID is %i",node.index)
+            logger.info(codes)
+            logger.info(points)
+            '''
+            self.wv.vocab[self.wv.index2word[node.index]].code=codes
+            self.wv.vocab[self.wv.index2word[node.index]].point=points
+            return (0,0)
+        origin_data = [w.vec for w in data_list]
+        """
+        Estimate two Gauss model by using EM Algorithm
+        """
+        gmm = GMM(n_components=2).fit(origin_data)
+        labels = gmm.predict(origin_data)
+        prob_list = gmm.predict_proba(origin_data)
+        '''
+        visual
+        '''
+        #pca = PCA(n_components=2)
+        #new_data = pca.fit_transform(origin_data)
+        #plt.scatter(new_data[:,0],new_data[:,1],c=labels,s=40,cmap='viridis')
+        #plt.scatter(X[:,0],X[:,1],c=labels,s=40,cmap='viridis')
+        #plt.show()
+        for id,w in enumerate(data_list):
+            #w.sort_key = prob_list[id][1]/(prob_list[id][0]+prob_list[id][1])
+            w.sort_key = (prob_list[id][1]-prob_list[id][0])
+        data_list = sorted(data_list,key= lambda x:x.sort_key)
+        new_points = array(list(points) + [inner_id], dtype=uint32)
+        inner_id += 1
+        (left_inner_num, left_dep) = self.create_gauss_tree_node(data_list[0:len(data_list)//2],array(list(codes)+[0],dtype=uint8),new_points,inner_id)
+        inner_id += left_inner_num
+        (right_inner_num, right_dep) = self.create_gauss_tree_node(data_list[len(data_list)//2:],array(list(codes)+[1],dtype=uint8),new_points,inner_id)
+        return (left_inner_num+right_inner_num+1, max(left_dep,right_dep)+1)
+
+
 
     def create_kd_tree_node(self,data_list,codes,points,inner_id):
         if len(data_list) == 1:
@@ -692,6 +732,17 @@ class Word2Vec(utils.SaveLoad):
         logger.info("the number of inner_node is %i",sum_node)
         logger.info("built pca tree with maximum node depth %i", max_dep)
         logger.info("built pca tree with average node depth %i", self.cal_ave_deep())
+
+    def create_binary_gauss_tree(self):
+        logger.info("constructing a gauss-tree from %i words",len(self.wv.vocab))
+        datalist = list(itervalues(self.wv.vocab))
+        for w in datalist:
+            w.vec = self.wv[self.wv.index2word[w.index]]
+        self.new_dimension = self.vector_size
+        (sum_node,max_dep) = self.create_gauss_tree_node(datalist,[],[],0)
+        logger.info("the number of inner_node is %i",sum_node)
+        logger.info("built gauss tree with maximum node depth %i", max_dep)
+        logger.info("built gauss tree with average node depth %i", self.cal_ave_deep())
 
     def create_binary_tree(self):
         """
@@ -937,10 +988,11 @@ class Word2Vec(utils.SaveLoad):
 
         return report_values
 
-    def finalize_vocab(self, update=False,kd_tree = False,pca = False):
+    def finalize_vocab(self, update=False,kd_tree = False,pca = False,cluster = 0):
         """Build tables and model weights based on final vocabulary settings."""
         self.kd_tree = kd_tree
         self.pca = pca
+        self.cluster = cluster
         if not self.wv.index2word:
             self.scale_vocab()
         if self.sorted_vocab and not update:
@@ -954,6 +1006,13 @@ class Word2Vec(utils.SaveLoad):
             elif self.kd_tree:
                 logger.info("build KD tree")
                 self.create_binary_kd_tree()
+            elif self.cluster is not 0:
+                if cluster is 1:
+                    logger.info("build Gauss tree")
+                    self.create_binary_gauss_tree()
+                elif self.cluster is 2:
+                    logger.info("build kmeans tree")
+                    self.create_binary_gauss_tree()
             else:
                 logger.info("build Huffman tree")
                 self.create_binary_tree()
