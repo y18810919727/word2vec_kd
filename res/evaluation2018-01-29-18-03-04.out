@@ -1,0 +1,177 @@
+modelname : neg5_300_cbow
+hs	0
+negative	5
+sg	0
+size	300
+pca	False
+kd_tree	False
+model_name	neg5_300_cbow
+train_time	25363.37778400001
+semantic : 0.6282557221783741
+syntactic : 0.662576112412178
+Total : 0.6470016373311502
+
+
+modelname : huf_300_sg
+hs	1
+negative	0
+sg	1
+size	300
+pca	False
+kd_tree	False
+model_name	huf_300_sg
+train_time	42696.08145699999
+aver_dep	10.940415920559326
+semantic : 0.6172059984214681
+syntactic : 0.5449180327868852
+Total : 0.5777220630372493
+
+
+modelname : huf_100_cbow
+hs	1
+negative	0
+sg	0
+size	100
+pca	False
+kd_tree	False
+model_name	huf_100_cbow
+train_time	23537.733621999992
+aver_dep	10.940415920559326
+semantic : 0.26451685646634343
+syntactic : 0.4523653395784543
+Total : 0.36712034383954156
+
+
+modelname : gauss_tree_300_cbow
+hs	1
+negative	0
+sg	0
+size	300
+pca	False
+kd_tree	False
+model_name	gauss_tree_300_cbow
+train_time	70098.26559899998
+aver_dep	18.87651618244077
+semantic : 0.4618333521253805
+syntactic : 0.568711943793911
+Total : 0.5202108063855915
+
+
+modelname : gauss_tree_100_sg
+hs	1
+negative	0
+sg	1
+size	100
+pca	False
+kd_tree	False
+model_name	gauss_tree_100_sg
+train_time	49610.52319199999
+aver_dep	18.73435523179823
+semantic : 0.6373886571203067
+syntactic : 0.5171896955503513
+Total : 0.5717355710192387
+
+
+modelname : huf_300_cbow
+hs	1
+negative	0
+sg	0
+size	300
+pca	False
+kd_tree	False
+model_name	huf_300_cbow
+train_time	26095.335594000004
+aver_dep	10.940415920559326
+semantic : 0.3940692299019055
+syntactic : 0.5400468384074941
+Total : 0.47380270159639787
+
+
+modelname : gauss_tree_300_sg
+hs	1
+negative	0
+sg	1
+size	300
+pca	False
+kd_tree	False
+model_name	gauss_tree_300_sg
+train_time	89712.00315599999
+aver_dep	18.80362171245672
+semantic : 0.6889164505581238
+syntactic : 0.5968149882903981
+Total : 0.6386103151862464
+
+
+modelname : neg5_100_sg
+hs	0
+negative	5
+sg	1
+size	100
+pca	False
+kd_tree	False
+model_name	neg5_100_sg
+train_time	35533.59941299999
+semantic : 0.5469613259668509
+syntactic : 0.571615925058548
+Total : 0.5604277527629963
+
+
+modelname : huf_100_sg
+hs	1
+negative	0
+sg	1
+size	100
+pca	False
+kd_tree	False
+model_name	huf_100_sg
+train_time	34086.37902299999
+aver_dep	10.940415920559326
+semantic : 0.4414251888600744
+syntactic : 0.4573302107728337
+Total : 0.450112566516578
+
+
+modelname : gauss_tree_100_cbow
+hs	1
+negative	0
+sg	0
+size	100
+pca	False
+kd_tree	False
+model_name	gauss_tree_100_cbow
+train_time	34193.6238
+aver_dep	18.84612647168539
+semantic : 0.44931784868643593
+syntactic : 0.5105386416861827
+Total : 0.4827568563241916
+
+
+modelname : neg5_100_cbow
+hs	0
+negative	5
+sg	0
+size	100
+pca	False
+kd_tree	False
+model_name	neg5_100_cbow
+train_time	23298.259837999998
+semantic : 0.49114894576615176
+syntactic : 0.5768618266978923
+Total : 0.5379656160458453
+
+
+modelname : gauss_tree_100_cbow
+hs	1
+negative	0
+sg	0
+size	100
+pca	False
+kd_tree	False
+model_name	gauss_tree_100_cbow
+train_time	35856.961153
+aver_dep	18.841006789478964
+semantic : 0.4346600518660503
+syntactic : 0.5147540983606558
+Total : 0.47840769545640605
+
+

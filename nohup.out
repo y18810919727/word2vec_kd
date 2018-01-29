@@ -1,0 +1,161 @@
+Training  huf_100_cbow
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+Training  gauss_tree_100_cbow
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+Training  huf_100_cbow
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+Training  pca_tree_100_cbow
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+Training  huf_100_sg
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+Training  pca_tree_100_sg
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+Training  huf_300_cbow
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+Training  pca_tree_300_cbow
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+Training  huf_300_sg
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+Training  pca_tree_300_sg
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+Training  neg5_100_sg
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+Training  neg5_100_cbow
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+Training  neg5_300_cbow
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56/home/afish/anaconda3/lib/python3.6/site-packages/sklearn/mixture/base.py:237: ConvergenceWarning: Initialization 1 did not converge. Try different init parameters, or increase max_iter, tol or check for degenerate data.
+  % (init + 1), ConvergenceWarning)
+
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
+'utf-8' codec can't decode byte 0xa0 in position 3949: invalid start byte
+Decode Error in %s!!!! ../data/AQ/wiki_56
